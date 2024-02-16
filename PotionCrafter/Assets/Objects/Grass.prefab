@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4182981914027097183}
   - component: {fileID: 2702996393369846138}
   - component: {fileID: -476137505070421218}
+  - component: {fileID: 8179062981320028760}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Untagged
@@ -102,6 +103,8 @@ MonoBehaviour:
   suckabletime: 10
   beingsucked: 0
   suckedtime: 0
+  slider: {fileID: 1436681985273969417}
+  destroyparticles: {fileID: 5942559774201458484, guid: 1c5394c3111ade44aa3ebfde1cc23d1c, type: 3}
 --- !u!61 &-476137505070421218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,6 +150,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.12, y: 5.12}
   m_EdgeRadius: 0
+--- !u!114 &8179062981320028760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063312384675021511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e24e0f4d0419842892de7411551018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4758796370819164842
 GameObject:
   m_ObjectHideFlags: 0
