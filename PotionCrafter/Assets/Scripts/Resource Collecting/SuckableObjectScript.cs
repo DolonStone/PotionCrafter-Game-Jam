@@ -8,8 +8,9 @@ public class SuckableObjectScript : MonoBehaviour
     public float suckabletime;
     public bool beingsucked;
     public float suckedtime;
-    public Slider slider;
+    public GameObject slider;
     public GameObject destroyparticles;
+    private bool beensucked;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +22,12 @@ public class SuckableObjectScript : MonoBehaviour
     {
         if (beingsucked == true)
         {
+            if (beensucked == false)
+            {
+                slider.SetActive(true);
+            }
             suckedtime += 0.01f;
-            slider.value = (10-suckedtime)/10;
+            slider.GetComponent<Slider>().value = (10-suckedtime)/10;
 
         }
 
@@ -47,7 +52,7 @@ public class SuckableObjectScript : MonoBehaviour
     }
     private void Break()
     {
-        Instantiate(destroyparticles);
+        //Instantiate(destroyparticles);
         destroyparticles.transform.position = new Vector2(transform.position.x, transform.position.y);
         destroyparticles.SetActive(false);
         destroyparticles.SetActive(true);
