@@ -11,6 +11,7 @@ public class SuckableObjectScript : MonoBehaviour
     public GameObject slider;
     public GameObject destroyparticles;
     private bool beensucked;
+    public float suckfactor;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class SuckableObjectScript : MonoBehaviour
             {
                 slider.SetActive(true);
             }
-            suckedtime += 0.01f;
+            suckedtime += suckfactor;
             slider.GetComponent<Slider>().value = (10-suckedtime)/10;
 
         }
@@ -43,6 +44,7 @@ public class SuckableObjectScript : MonoBehaviour
         if (collision.GetComponent<enablesuck>().hooverenabled == true)
         {
             beingsucked = true;
+            suckfactor = collision.GetComponent<enablesuck>().suckfactor;
 
         }
     }
