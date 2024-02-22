@@ -17,7 +17,7 @@ public class PlayAttackAnimation : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnMouseDown()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -28,8 +28,8 @@ public class PlayAttackAnimation : MonoBehaviour
             }
             print("hello");
             attackanimation.SetTrigger(pressanim);
-            attackdelay = true;
-            StartCoroutine(DelayAttack());
+            //attackdelay = true;
+            //StartCoroutine(DelayAttack());
         }
     }
 
