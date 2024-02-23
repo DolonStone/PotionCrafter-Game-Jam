@@ -105,6 +105,8 @@ MonoBehaviour:
   suckedtime: 0
   slider: {fileID: 4758796370819164842}
   destroyparticles: {fileID: 5942559774201458484, guid: 1c5394c3111ade44aa3ebfde1cc23d1c, type: 3}
+  suckfactor: 0
+  drop: {fileID: 193809556619311546, guid: 1682ce4d4154c724ca77ded2057d94c7, type: 3}
 --- !u!61 &-476137505070421218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -266,7 +268,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6804307058784929666, guid: a2796f36a1ed48a4cb5364fcf973330b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

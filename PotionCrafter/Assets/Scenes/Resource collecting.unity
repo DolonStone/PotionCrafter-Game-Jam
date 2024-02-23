@@ -3487,6 +3487,7 @@ GameObject:
   - component: {fileID: 1340319206}
   - component: {fileID: 1340319205}
   - component: {fileID: 1340319204}
+  - component: {fileID: 1340319207}
   m_Layer: 0
   m_Name: Axe
   m_TagString: Untagged
@@ -3550,7 +3551,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: d3259619add2b864cab09d7b73b6f066, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 384b930a6c935b14c8b61fa60740bee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3611,7 +3612,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hooverenabled: 0
   sucker: {fileID: 1638726495}
-  suckfactor: 0
+  suckfactor: 9.25
+  delay: 118.12
+  timesincelast: 0
+--- !u!60 &1340319207
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340319201}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.97999996, y: 0.26999998}
+      - {x: 1.56, y: 0.28}
+      - {x: 1.5799999, y: -0.64}
+      - {x: 1.88, y: -0.98999995}
+      - {x: 2.26, y: -1.01}
+      - {x: 2.26, y: -0.96}
+      - {x: 2.56, y: -0.65999997}
+      - {x: 2.56, y: 0.65999997}
+      - {x: 2.26, y: 0.65999997}
+      - {x: 2.26, y: 1.28}
+      - {x: 2.24, y: 1.3}
+      - {x: 1.9399999, y: 1.92}
+      - {x: 1.92, y: 1.9399999}
+      - {x: 0.68, y: 2.56}
+      - {x: -0.66999996, y: 2.56}
+      - {x: -1.01, y: 2.26}
+      - {x: -0.97999996, y: 1.87}
+      - {x: -0.69, y: 1.5799999}
+      - {x: 0.29999998, y: 1.23}
+      - {x: -0.03, y: 0.71999997}
+      - {x: -0.69, y: 0.02}
+      - {x: -1.3299999, y: -0.62}
+      - {x: -1.62, y: -0.96}
+      - {x: -1.9399999, y: -1.23}
+      - {x: -2.26, y: -1.55}
+      - {x: -2.26, y: -2.26}
+      - {x: -1.5799999, y: -2.26}
+      - {x: -1.5799999, y: -2.24}
+      - {x: -0.94, y: -1.64}
+      - {x: -0.62, y: -1.3199999}
+  m_UseDelaunayMesh: 0
 --- !u!1001 &1340752791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4797,6 +4875,8 @@ MonoBehaviour:
   hooverenabled: 0
   sucker: {fileID: 1638726495}
   suckfactor: 0.01
+  delay: 1e+11
+  timesincelast: 0
 --- !u!60 &1600094792
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5023,15 +5103,13 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
+  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
-  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
-  m_UseCustomTrailVertexStreams: 0
-  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -10383,7 +10461,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2978939399209891703, guid: c438358a8ed249345bf7ef6e7f53231c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

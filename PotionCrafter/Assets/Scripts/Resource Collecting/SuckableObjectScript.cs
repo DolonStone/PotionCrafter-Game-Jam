@@ -12,6 +12,7 @@ public class SuckableObjectScript : MonoBehaviour
     public GameObject destroyparticles;
     private bool beensucked;
     public float suckfactor;
+    public GameObject drop;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,11 +55,12 @@ public class SuckableObjectScript : MonoBehaviour
     }
     private void Break()
     {
-        GameObject tempparticles = Instantiate(destroyparticles);
+        Instantiate(destroyparticles);
         destroyparticles.transform.position = new Vector2(transform.position.x, transform.position.y);
-        destroyparticles.SetActive(false);
-        destroyparticles.SetActive(true);
 
+        Instantiate(drop);
+        drop.transform.position = new Vector2(transform.position.x, transform.position.y);
+        drop.GetComponent<Rigidbody2D>().AddForce(new Vector2(5,5),ForceMode2D.Impulse);
         Destroy(gameObject);
     }
 }
