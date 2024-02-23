@@ -8,8 +8,6 @@ public class dragthepotion : MonoBehaviour
     Vector2 difference = Vector2.zero;
     bool givecustomer = false;
     public static int num = 0;
-
-
     [SerializeField] private Vector3 setPosition;
 
     public void SetPositionFunction()
@@ -30,23 +28,30 @@ public class dragthepotion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) // potion collides with customer //
     {
-        givecustomer = true;
+        string potionname = textchange.potionwanted;
+        if (gameObject.name == potionname)
+        {
+            givecustomer = true;
+        }  
     }
     
     void Update()
-    {
+    { 
+
         if (Input.GetMouseButtonUp(0) & givecustomer == true & num < 4) // if player has let go of potion and it collides with the customer //
         {
-            num++; // havent figured out how to randomise yet so for now customers have an order, this should be temp //
             givecustomer = false;
+            num++; // havent figured out how to randomise yet so for now customers have an order, this should be temp //
+            
             //potionncusinteraction.SetPositionFunction();
             SetPositionFunction();
 
         }
         else if (Input.GetMouseButtonUp(0) & givecustomer == true & num == 4)
         {
-            num = 0;
             givecustomer = false;
+            num = 0;
+            
             SetPositionFunction();
         }
 
