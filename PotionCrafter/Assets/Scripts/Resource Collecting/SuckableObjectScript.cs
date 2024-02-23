@@ -15,7 +15,7 @@ public class SuckableObjectScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //destroyparticles = GameObject.FindGameObjectWithTag("destroyparticles");
     }
 
     // Update is called once per frame
@@ -54,10 +54,11 @@ public class SuckableObjectScript : MonoBehaviour
     }
     private void Break()
     {
-        //Instantiate(destroyparticles);
+        GameObject tempparticles = Instantiate(destroyparticles);
         destroyparticles.transform.position = new Vector2(transform.position.x, transform.position.y);
         destroyparticles.SetActive(false);
         destroyparticles.SetActive(true);
+
         Destroy(gameObject);
     }
 }
