@@ -12,7 +12,6 @@ public class CustomerSpriteChange : MonoBehaviour
     public Sprite sp5;
     // will make efficient l8r //
 
-    int num = 0;
     //Random rnd = new Random();
 
     // Start is called before the first frame update //
@@ -24,13 +23,10 @@ public class CustomerSpriteChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            num++;
-        }
         //int num = rnd.Next(0,3);
-        // havent figured out how to randomise yet so for now customers have an order, this should be temp //
-        switch (num)
+        
+        int customernum = dragthepotion.num; // takes the variable from the other file to cnage the sprite //
+        switch (customernum)
         {
             case 0:
                 GetComponent<SpriteRenderer>().sprite = sp1;
@@ -52,7 +48,7 @@ public class CustomerSpriteChange : MonoBehaviour
                 GetComponent<SpriteRenderer>().sprite = sp5;
                 break;
             default:
-                num = 0;
+                Debug.Log("ERROR: end of switch case");
                 break;
         }
 
