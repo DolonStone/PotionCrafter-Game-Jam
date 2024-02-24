@@ -13,6 +13,7 @@ public class dragthepotion : MonoBehaviour
     public void SetPositionFunction()
     {
         transform.position = setPosition;
+        //givecustomer = false;
     }
 
     private void OnMouseDown() // click on sprite //
@@ -32,11 +33,19 @@ public class dragthepotion : MonoBehaviour
         if (gameObject.name == potionname)
         {
             givecustomer = true;
-        }  
+        }
+        else
+        {
+            givecustomer = false;
+        }
     }
     
     void Update()
     { 
+        if (Input.GetMouseButtonUp(0))
+        {
+            SetPositionFunction();
+        }
 
         if (Input.GetMouseButtonUp(0) & givecustomer == true & num < 4) // if player has let go of potion and it collides with the customer //
         {
