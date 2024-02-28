@@ -10,28 +10,29 @@ public class enablesuck : MonoBehaviour
     public float suckfactor;
     public float delay;
     public float timesincelast;
+    public bool attackdelay;
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButton(0))
         {
 
-            
-            if (timesincelast < delay)
-            {
-                hooverenabled = true;
 
-            }
-            else
-            {
-                hooverenabled = false;
-            }
 
-            timesincelast += 1f;
         }
         if (Input.GetMouseButtonDown(0))
         {
             sucker.Play();
+            if (attackdelay)
+            {
+                return;
+            }
+
+            hooverenabled = true;
+            attackdelay = true;
+            StartCoroutine(Delayhoover());
+            StartCoroutine(Delayattack());
         }
 
         else if (Input.GetMouseButtonUp(0))
@@ -41,6 +42,17 @@ public class enablesuck : MonoBehaviour
             timesincelast= 0f;
         }
         
+    }
+    private IEnumerator Delayhoover()
+    {
+        yield return new WaitForSeconds(delay);
+        
+        hooverenabled = false;
+    }
+    private IEnumerator Delayattack()
+    {
+        yield return new WaitForSeconds(1.66f);
+        attackdelay = false;
     }
 
 }

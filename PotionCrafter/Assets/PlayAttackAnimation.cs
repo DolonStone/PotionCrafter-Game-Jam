@@ -26,10 +26,10 @@ public class PlayAttackAnimation : MonoBehaviour
             {
                 return;
             }
-            print("hello");
+
             attackanimation.SetTrigger(pressanim);
-            //attackdelay = true;
-            //StartCoroutine(DelayAttack());
+            attackdelay = true;
+            StartCoroutine(DelayAttack());
         }
     }
 
@@ -46,6 +46,6 @@ public class PlayAttackAnimation : MonoBehaviour
     private IEnumerator DelayAttack()
     {
         yield return new WaitForSeconds(attackdelaytime);
-        attackdelay = true;
+        attackdelay = false;
     }
 }

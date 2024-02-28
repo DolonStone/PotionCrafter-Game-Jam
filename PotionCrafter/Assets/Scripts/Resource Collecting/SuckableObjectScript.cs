@@ -42,12 +42,16 @@ public class SuckableObjectScript : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.GetComponent<enablesuck>().hooverenabled == true)
+        if (collision.CompareTag("Destroyer"))
         {
-            beingsucked = true;
-            suckfactor = collision.GetComponent<enablesuck>().suckfactor;
+            if (collision.GetComponent<enablesuck>().hooverenabled == true)
+            {
+                beingsucked = true;
+                suckfactor = collision.GetComponent<enablesuck>().suckfactor;
 
+            }
         }
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

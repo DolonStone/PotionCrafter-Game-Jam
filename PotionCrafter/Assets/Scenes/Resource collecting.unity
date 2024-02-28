@@ -959,9 +959,10 @@ GameObject:
   - component: {fileID: 464076338}
   - component: {fileID: 464076340}
   - component: {fileID: 464076341}
+  - component: {fileID: 464076342}
   m_Layer: 0
   m_Name: MC
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1039,6 +1040,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimtransform: {fileID: 1071675503}
+--- !u!70 &464076342
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464076337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1001 &492268408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3490,11 +3526,11 @@ GameObject:
   - component: {fileID: 1340319207}
   m_Layer: 0
   m_Name: Axe
-  m_TagString: Untagged
+  m_TagString: Destroyer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1340319202
 Transform:
   m_ObjectHideFlags: 0
@@ -3576,7 +3612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackanimation: {fileID: 1340319205}
   attackdelay: 0
-  attackdelaytime: 0.1
+  attackdelaytime: 1.66
 --- !u!95 &1340319205
 Animator:
   serializedVersion: 5
@@ -3612,9 +3648,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hooverenabled: 0
   sucker: {fileID: 1638726495}
-  suckfactor: 9.25
-  delay: 118.12
+  suckfactor: 0.18
+  delay: 0.15
   timesincelast: 0
+  attackdelay: 0
 --- !u!60 &1340319207
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4787,11 +4824,11 @@ GameObject:
   - component: {fileID: 1600094792}
   m_Layer: 0
   m_Name: Hoover
-  m_TagString: Untagged
+  m_TagString: Destroyer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1600094789
 Transform:
   m_ObjectHideFlags: 0
@@ -4877,6 +4914,7 @@ MonoBehaviour:
   suckfactor: 0.01
   delay: 1e+11
   timesincelast: 0
+  attackdelay: 0
 --- !u!60 &1600094792
 PolygonCollider2D:
   m_ObjectHideFlags: 0
