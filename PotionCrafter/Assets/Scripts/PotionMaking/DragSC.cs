@@ -28,6 +28,7 @@ public class SC_Dragable : MonoBehaviour
             joint.dampingRatio = damping;
             joint.frequency = frequency;
             joint.anchor = joint.transform.InverseTransformPoint(worldpos);
+            
         }
 
         else if (Input.GetMouseButtonUp(0))
@@ -40,6 +41,14 @@ public class SC_Dragable : MonoBehaviour
         if (joint)
         {
             joint.target = worldpos;
+
+            Vector3 euler = joint.connectedBody.transform.eulerAngles;
+            if (euler.z > 180)
+            {
+                euler.z = euler.z - 360;
+            }
+            euler.z = Mathf.Clamp(euler.z, -25, 25);
+            joint.connectedBody.transform.eulerAngles = euler;
         }
     }
 }

@@ -9,6 +9,7 @@ public class enablesuck : MonoBehaviour
     public ParticleSystem sucker;
     public float suckfactor;
     public float delay;
+    public float attackdelaytime;
     public float timesincelast;
     public bool attackdelay;
 
@@ -51,7 +52,7 @@ public class enablesuck : MonoBehaviour
     }
     private IEnumerator Delayattack()
     {
-        yield return new WaitForSeconds(1.66f);
+        yield return new WaitForSeconds(attackdelaytime);
         attackdelay = false;
     }
 
