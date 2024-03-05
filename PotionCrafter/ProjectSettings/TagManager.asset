@@ -6,6 +6,8 @@ TagManager:
   tags:
   - destroyparticles
   - Destroyer
+  - Mortar
+  - Pestle
   layers:
   - Default
   - TransparentFX
