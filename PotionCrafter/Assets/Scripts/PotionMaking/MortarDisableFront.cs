@@ -5,6 +5,8 @@ using UnityEngine;
 public class MortarDisableFront : MonoBehaviour
 {
     public SpriteRenderer frontbowl;
+
+    public int itemsWithin = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,19 +14,29 @@ public class MortarDisableFront : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        
+        if (itemsWithin == 0)
+        {
+            frontbowl.enabled = true;
+        }
+        else
+        {
+            frontbowl.enabled = false;
+        }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        frontbowl.enabled = false;
+        itemsWithin += 1;
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        frontbowl.enabled = true;
+        itemsWithin -= 1;
     }
+    
 
 
 }
