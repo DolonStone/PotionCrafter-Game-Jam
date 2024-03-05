@@ -7,27 +7,27 @@ public class CenterOfMass : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector2 offset;
-    private int angle = 0;
-    
+    public Camera cam;
+    public Transform target;
+    private Vector3 targetPos;
+    private Vector3 screenMiddle;
+
+
     void Start()
     {
         rb.centerOfMass = offset;
 
     }
-    private void FixedUpdate()
+    private void Update()
     {
         /*
-        Vector3 euler = transform.eulerAngles;
-        if (euler.z > 180)
-        {
-            euler.z = euler.z - 360;
-        }
-        euler.z = Mathf.Clamp(euler.z, -25, 25);
-        transform.eulerAngles = euler;
+        transform.LookAt(target.position);
+        transform.Rotate(Vector3.left * 90);
+        transform.Rotate(Vector3.down * 90);
         */
         
     }
-    
+
 
 
 }

@@ -7,7 +7,9 @@ public class SC_Dragable : MonoBehaviour
     public float damping;
     public float frequency;
     public LayerMask draglayer;
+    public Transform target;
     private TargetJoint2D joint;
+    public GameObject currentobject;
 
     private void Update()
     {
@@ -20,10 +22,12 @@ public class SC_Dragable : MonoBehaviour
                 return;
             }
             var dragginobjectbody = draggingobjectcollider.attachedRigidbody;
+            
             if (!dragginobjectbody)
             {
                 return;
             }
+            currentobject = draggingobjectcollider.gameObject;
             joint = dragginobjectbody.gameObject.AddComponent<TargetJoint2D>();
             joint.dampingRatio = damping;
             joint.frequency = frequency;
@@ -37,18 +41,17 @@ public class SC_Dragable : MonoBehaviour
             joint = null;
         }
 
-
+        
         if (joint)
         {
-            joint.target = worldpos;
-
-            Vector3 euler = joint.connectedBody.transform.eulerAngles;
-            if (euler.z > 180)
+            if (currentobject.CompareTag("Pestle"))
             {
-                euler.z = euler.z - 360;
+                currentobject.transform.right = (target.position - new Vector3(0, 6, 0)) - currentobject.transform.position;
             }
-            euler.z = Mathf.Clamp(euler.z, -25, 25);
-            joint.connectedBody.transform.eulerAngles = euler;
+            joint.target = worldpos;
+            
+
+            
         }
     }
 }
