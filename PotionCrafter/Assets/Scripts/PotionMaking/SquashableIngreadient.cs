@@ -6,6 +6,8 @@ public class SquashableIngreadient : MonoBehaviour
 {
     public GameObject thisgameobject;
     public float sizeScale = 1;
+    public Rigidbody2D pestleRb;
+    public ParticleSystem mushing;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +33,25 @@ public class SquashableIngreadient : MonoBehaviour
         if (collision.CompareTag("Pestle"))
         {
             
+            if (Mathf.Abs(pestleRb.velocity.magnitude) >= 0.3)
+            {
+                float crushingpower = Mathf.Abs(pestleRb.velocity.magnitude) / 1000;
+                mushing.Play();
+                if (transform.localScale.x > 0.01)
+                {
+                    transform.localScale = new Vector3(transform.localScale.x - crushingpower, transform.localScale.y - crushingpower, transform.localScale.z);
+                }
+            }
+            else
+            {
+                
+                mushing.Stop();
+            }
         }
     }
-    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
+        mushing.Stop();
+    }
 }

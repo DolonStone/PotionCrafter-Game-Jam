@@ -23,4 +23,8 @@ public class IgnoreIngreadients : MonoBehaviour
             Physics2D.IgnoreCollision(thisCollider, collision.gameObject.GetComponent<Collider2D>());
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+       
+    }
 }
