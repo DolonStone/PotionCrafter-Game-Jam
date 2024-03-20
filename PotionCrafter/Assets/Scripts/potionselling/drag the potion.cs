@@ -7,7 +7,9 @@ public class dragthepotion : MonoBehaviour
     // initialise variables //
     Vector2 difference = Vector2.zero;
     bool givecustomer = false;
-    public static int num = 0;
+    //public static int num = 0;
+    public static float Randnumcus = 0f;
+    public static float Randnumpotion = 0f;
     [SerializeField] private Vector3 setPosition;
 
     public void SetPositionFunction()
@@ -47,22 +49,28 @@ public class dragthepotion : MonoBehaviour
             SetPositionFunction();
         }
 
-        if (Input.GetMouseButtonUp(0) & givecustomer == true & num < 4) // if player has let go of potion and it collides with the customer //
+        if (Input.GetMouseButtonUp(0) & givecustomer == true) // if player has let go of potion and it collides with the customer //
         {
+            int currentcustomer = (int)CustomerSpriteChange.customernum;
+            if (currentcustomer == Randnumcus)
+            {
+                Randnumcus = Random.Range(0, 4);
+            }
+            Randnumpotion = Random.Range(0, 3);
             givecustomer = false;
-            num++; // havent figured out how to randomise yet so for now customers have an order, this should be temp //
-            
-            //potionncusinteraction.SetPositionFunction();
-            SetPositionFunction();
+
+            //num++; // havent figured out how to randomise yet so for now customers have an order, this should be temp //
+           
+            //SetPositionFunction();
 
         }
-        else if (Input.GetMouseButtonUp(0) & givecustomer == true & num == 4)
-        {
-            givecustomer = false;
-            num = 0;
+        //else if (Input.GetMouseButtonUp(0) & givecustomer == true & num == 4)
+        //{
+        //    givecustomer = false;
+        //    num = 0;
             
-            SetPositionFunction();
-        }
+            //SetPositionFunction();
+        //}
 
     }
 }
