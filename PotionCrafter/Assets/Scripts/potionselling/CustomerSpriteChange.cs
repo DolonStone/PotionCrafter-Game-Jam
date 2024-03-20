@@ -10,6 +10,7 @@ public class CustomerSpriteChange : MonoBehaviour
     public Sprite sp3;
     public Sprite sp4;
     public Sprite sp5;
+    public static int customernum = 0;
     // will make efficient l8r //
 
     //Random rnd = new Random();
@@ -17,15 +18,15 @@ public class CustomerSpriteChange : MonoBehaviour
     // Start is called before the first frame update //
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         //int num = rnd.Next(0,3);
-        
-        int customernum = dragthepotion.num; // takes the variable from the other file to cnage the sprite //
+
+        customernum = (int)dragthepotion.Randnumcus; // takes the variable from the other file to cnage the sprite //
         switch (customernum)
         {
             case 0:
@@ -51,6 +52,5 @@ public class CustomerSpriteChange : MonoBehaviour
                 Debug.Log("ERROR: end of switch case");
                 break;
         }
-
-    }
+     }
 }
