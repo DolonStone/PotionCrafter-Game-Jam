@@ -45,6 +45,9 @@ GameObject:
   - component: {fileID: 2947306390187590046}
   - component: {fileID: 801395687120012106}
   - component: {fileID: 5243052374419443744}
+  - component: {fileID: 6866480891493112318}
+  - component: {fileID: 8211313766670144898}
+  - component: {fileID: 4011598787065262972}
   m_Layer: 0
   m_Name: Bottom
   m_TagString: Untagged
@@ -199,6 +202,78 @@ PolygonCollider2D:
       - {x: 1.16, y: -0.625}
       - {x: 1.9399999, y: 0.33499998}
   m_UseDelaunayMesh: 0
+--- !u!114 &6866480891493112318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8399424300534734077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c5bdc70116d0c4ab5a35c9cce7751a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 801395687120012106}
+  offset: {x: 0, y: 0.66}
+  cam: {fileID: 0}
+  target: {fileID: 0}
+--- !u!68 &8211313766670144898
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8399424300534734077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.7937939, y: 0.117877856}
+  - {x: 1.7495863, y: 0.11787756}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &4011598787065262972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8399424300534734077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33831f53960a4b741b0311c9ac09bfd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singlesliced: {fileID: 2972789649695009944, guid: 5ecb44342ee35d94189df1abb05238b1, type: 3}
+  slicer: {fileID: 0}
+  knifeSpeed: {x: 0, y: 0, z: 0}
 --- !u!1 &8884440004001342027
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +286,9 @@ GameObject:
   - component: {fileID: 800276435167579007}
   - component: {fileID: 2456126436638202960}
   - component: {fileID: 1749126331915745487}
+  - component: {fileID: 8022818069193510733}
+  - component: {fileID: 1094278051043222002}
+  - component: {fileID: 3945328920407456521}
   m_Layer: 0
   m_Name: Top
   m_TagString: Untagged
@@ -368,3 +446,75 @@ PolygonCollider2D:
       - {x: 2.56, y: 0.82}
       - {x: 2.26, y: 1.16}
   m_UseDelaunayMesh: 0
+--- !u!114 &8022818069193510733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884440004001342027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c5bdc70116d0c4ab5a35c9cce7751a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2456126436638202960}
+  offset: {x: 0, y: -0.66}
+  cam: {fileID: 0}
+  target: {fileID: 0}
+--- !u!68 &1094278051043222002
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884440004001342027}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.130728, y: -0.058939174}
+  - {x: 2.5894685, y: -0.11787817}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &3945328920407456521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884440004001342027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33831f53960a4b741b0311c9ac09bfd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singlesliced: {fileID: 2972789649695009944, guid: 5ecb44342ee35d94189df1abb05238b1, type: 3}
+  slicer: {fileID: 0}
+  knifeSpeed: {x: 0, y: 0, z: 0}

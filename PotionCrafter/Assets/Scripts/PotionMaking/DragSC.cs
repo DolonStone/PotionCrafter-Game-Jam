@@ -10,10 +10,13 @@ public class SC_Dragable : MonoBehaviour
     public Transform target;
     private TargetJoint2D joint;
     public GameObject currentobject;
-
+    public Vector3 mouseFrameMovement = Vector3.zero;
+    private Vector3 lastMousePos = Vector3.zero;
     private void Update()
     {
+
         var worldpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
         if (Input.GetMouseButtonDown(0))
         {
             var draggingobjectcollider = Physics2D.OverlapPoint(worldpos, draglayer);
@@ -54,4 +57,8 @@ public class SC_Dragable : MonoBehaviour
             
         }
     }
+  
+   
+
+  
 }

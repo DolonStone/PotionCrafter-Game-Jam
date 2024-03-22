@@ -9,6 +9,7 @@ TagManager:
   - Mortar
   - Pestle
   - Ingredient
+  - Slicer
   layers:
   - Default
   - TransparentFX
