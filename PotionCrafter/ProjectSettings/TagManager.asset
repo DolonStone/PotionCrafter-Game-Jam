@@ -50,3 +50,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Front
+    uniqueID: 1517398705
+    locked: 0
