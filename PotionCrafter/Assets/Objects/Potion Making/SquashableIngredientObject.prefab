@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8980682090273657219}
   - component: {fileID: 7087228494829356494}
   m_Layer: 0
-  m_Name: SquashableIngreadient 1
+  m_Name: SquashableIngredientObject
   m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,9 +29,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2583394494012003198}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8384466, y: 0.5633954, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.1, y: -6.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9005617423232675345}
@@ -207,8 +207,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisgameobject: {fileID: 2583394494012003198}
   sizeScale: 1
+  minsize: 0.38
+  bestSquishAmount: 0.7
   pestleRb: {fileID: 0}
   mushing: {fileID: 331192892044080341}
+  sliderGameObject: {fileID: 0}
+  sliderFill: {fileID: 0}
+  sliderIncriment: 0
 --- !u!58 &7087228494829356494
 CircleCollider2D:
   m_ObjectHideFlags: 0
