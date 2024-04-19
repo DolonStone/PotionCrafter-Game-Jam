@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 2743939880119764550}
   - component: {fileID: 8673080581627339282}
   - component: {fileID: 5574092891285863208}
-  - component: {fileID: 3862537022637716646}
+  - component: {fileID: 3076288463138044275}
   - component: {fileID: 787404436925071527}
+  - component: {fileID: 4491245720958465045}
   m_Layer: 0
   m_Name: SliceableObject
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.098305, y: 0.34647414, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 13, y: 13, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9337d90a4b1f6cd41a7844aabe1b7d04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 659f6ed22ede9b542b2ba82d1d6ea206, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,7 +131,7 @@ MonoBehaviour:
   singlesliced: {fileID: 5052138406486441371, guid: 30593fc37db5d4f4f8f8544a244e28a4, type: 3}
   slicer: {fileID: 0}
   knifeSpeed: {x: 0, y: 0, z: 0}
---- !u!60 &3862537022637716646
+--- !u!60 &3076288463138044275
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,7 +167,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 0.16, y: 0.16}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -174,40 +175,23 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.9362322, y: -0.9812976}
-      - {x: 1.9260402, y: 0.6275617}
-      - {x: 2.2511616, y: 0.6310695}
-      - {x: 2.2504134, y: 0.95217764}
-      - {x: 2.5625892, y: 0.95071304}
-      - {x: 2.5570388, y: 1.9308634}
-      - {x: 2.2553868, y: 1.931853}
-      - {x: 2.2428603, y: 2.2487729}
-      - {x: 1.9069904, y: 2.2492714}
-      - {x: 1.9113404, y: 1.9235197}
-      - {x: 1.2874836, y: 1.9283075}
-      - {x: 1.28, y: 2.26}
-      - {x: 0.9695142, y: 2.2573144}
-      - {x: 0.97999996, y: 2.56}
-      - {x: 0.62, y: 2.56}
-      - {x: 0.6298869, y: 2.2525673}
-      - {x: 0.32908845, y: 2.2546759}
-      - {x: -0.02, y: 1.92}
-      - {x: -0.016578555, y: 1.6173339}
-      - {x: -0.64, y: 1.62}
-      - {x: -1.35, y: 1.02}
-      - {x: -1.9399999, y: -0.5}
-      - {x: -1.9399999, y: -1.9599999}
-      - {x: -1.65, y: -2.26}
-      - {x: 0.32669955, y: -2.2465975}
-      - {x: 0.3265961, y: -2.197112}
-      - {x: 0.3257095, y: -1.9235979}
-      - {x: 0.9663546, y: -1.9276356}
-      - {x: 0.96797884, y: -1.9065111}
-      - {x: 0.96470475, y: -1.6033441}
-      - {x: 1.2874091, y: -1.6061605}
-      - {x: 1.2906134, y: -1.2929287}
-      - {x: 1.6128503, y: -1.2901272}
-      - {x: 1.6128473, y: -0.9784212}
+    - - {x: 0.06594198, y: 0.07110467}
+      - {x: 0.043089166, y: 0.059038617}
+      - {x: 0.022085002, y: 0.080088705}
+      - {x: -0.0023593088, y: 0.05134719}
+      - {x: -0.019131625, y: 0.051176976}
+      - {x: -0.03995943, y: 0.029814065}
+      - {x: -0.040303633, y: 0.011915914}
+      - {x: -0.0499937, y: 0.010862451}
+      - {x: -0.050853908, y: -0.019975202}
+      - {x: -0.062183563, y: -0.018808644}
+      - {x: -0.0608982, y: -0.060227875}
+      - {x: -0.048163563, y: -0.06981232}
+      - {x: 0.01224542, y: -0.069812335}
+      - {x: 0.060898192, y: -0.029363273}
+      - {x: 0.06112065, y: 0.019729044}
+      - {x: 0.08032838, y: 0.02927991}
+      - {x: 0.08063661, y: 0.058987934}
   m_UseDelaunayMesh: 0
 --- !u!68 &787404436925071527
 EdgeCollider2D:
@@ -238,14 +222,55 @@ EdgeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -1.2992948, y: -1.8063785}
-  - {x: 1.4122003, y: 1.4864991}
+  - {x: -0.04408442, y: -0.05684429}
+  - {x: 0.049351618, y: 0.056503743}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &4491245720958465045
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7512931301768286332}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.036425903, y: 0.030663118}
+  - {x: 0.04530236, y: -0.039539285}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
