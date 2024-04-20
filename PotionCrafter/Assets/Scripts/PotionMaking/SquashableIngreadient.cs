@@ -49,7 +49,7 @@ public class SquashableIngreadient : MonoBehaviour
             
             if (Mathf.Abs(pestleRb.velocity.magnitude) >= 0.3)
             {
-                float crushingpower = Mathf.Abs(pestleRb.velocity.magnitude) / 1000;
+                float crushingpower = Mathf.Abs(pestleRb.velocity.magnitude) / 100;
                 mushing.Play();
                 if (transform.localScale.x > minsize)
                 {
@@ -66,6 +66,11 @@ public class SquashableIngreadient : MonoBehaviour
                     overflowSliderIncriment += 0.07f;
                     sliderFill.color = Color.Lerp(Color.green, Color.red, overflowSliderIncriment);
                     slider.value += 0.02f;
+                }
+                if(slider.value >= 1.25)
+                {
+                    Destroy(sliderGameObject);
+                    Destroy(gameObject);
                 }
                 
             }
