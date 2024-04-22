@@ -10,6 +10,8 @@ TagManager:
   - Pestle
   - Ingredient
   - Slicer
+  - Heater
+  - Container
   layers:
   - Default
   - TransparentFX

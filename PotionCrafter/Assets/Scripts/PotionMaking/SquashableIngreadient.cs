@@ -9,7 +9,6 @@ public class SquashableIngreadient : MonoBehaviour
     public float sizeScale = 1;
     public float minsize = 0.01f;
     public float bestSquishAmount = 0.7f;
-    private float maxSquish = 1f;
     public GameObject pestle;
     public Rigidbody2D pestleRb;
     public ParticleSystem mushing;
@@ -21,6 +20,10 @@ public class SquashableIngreadient : MonoBehaviour
     public Image sliderFill;
     public float sliderIncriment = 0f;
     private float overflowSliderIncriment = 0f;
+    private float timer = 0f;
+    public Sprite SquashedSprite;
+    private SpriteRenderer spriteRenderer;
+    public int incrimentDividingFactor = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,7 @@ public class SquashableIngreadient : MonoBehaviour
         startScale = transform.localScale.x;
         scaleTotalDif = startScale - minsize;
         slider = sliderGameObject.GetComponent<Slider>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -46,38 +50,45 @@ public class SquashableIngreadient : MonoBehaviour
 
         if (collision.CompareTag("Pestle"))
         {
-            
-            if (Mathf.Abs(pestleRb.velocity.magnitude) >= 0.3)
+            timer += Time.deltaTime;
+
+            if (timer >= 0.05)
             {
-                float crushingpower = Mathf.Abs(pestleRb.velocity.magnitude) / 100;
-                mushing.Play();
-                if (transform.localScale.x > minsize)
+                if (Mathf.Abs(pestleRb.velocity.magnitude) >= 0.3)
                 {
-                    transform.localScale = new Vector3(transform.localScale.x - crushingpower, transform.localScale.y - crushingpower, transform.localScale.z);
-                    sliderIncriment = (startScale - transform.localScale.x) / scaleTotalDif;
-                    sliderFill.color = Color.Lerp(Color.gray, Color.green, sliderIncriment);
-                    slider.value = sliderIncriment;
-                    
+                    float crushingpower = Mathf.Abs(pestleRb.velocity.magnitude) / incrimentDividingFactor;
+                    mushing.Play();
+                    if (transform.localScale.x > minsize)
+                    {
+                        transform.localScale = new Vector3(transform.localScale.x - crushingpower, transform.localScale.y - crushingpower, transform.localScale.z);
+                        sliderIncriment = (startScale - transform.localScale.x) / scaleTotalDif;
+                        sliderFill.color = Color.Lerp(Color.gray, Color.green, sliderIncriment);
+                        slider.value = sliderIncriment;
+
+                    }
+                    if (slider.value >= 0.5)
+                    {
+                        spriteRenderer.sprite = SquashedSprite;
+                    }
+                    if (slider.value >= 1)
+                    {
+
+                        overflowSliderIncriment += 0.07f;
+                        sliderFill.color = Color.Lerp(Color.green, Color.red, overflowSliderIncriment);
+                        slider.value += 0.02f;
+                    }
+                    if (slider.value >= 1.25)
+                    {
+                        Destroy(sliderGameObject);
+                        Destroy(gameObject);
+                    }
+
                 }
-                
-                if (slider.value >= 1)
+                else
                 {
 
-                    overflowSliderIncriment += 0.07f;
-                    sliderFill.color = Color.Lerp(Color.green, Color.red, overflowSliderIncriment);
-                    slider.value += 0.02f;
+                    mushing.Stop();
                 }
-                if(slider.value >= 1.25)
-                {
-                    Destroy(sliderGameObject);
-                    Destroy(gameObject);
-                }
-                
-            }
-            else
-            {
-                
-                mushing.Stop();
             }
         }
     }
