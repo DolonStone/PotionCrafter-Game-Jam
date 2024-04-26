@@ -13,10 +13,15 @@ public class BoilIngredient : MonoBehaviour
     public Image sliderFill;
     public float sliderIncrimented = 0f;
     private float timer = 0f;
+    public float underdoneIncriment = 0.005f;
+    public float overdoneIncriment = 0.02f;
+    public Sprite heatedSprite;
+    private SpriteRenderer spriteRenderer;
     
     
     private void Start()
     {
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         heater = GameObject.FindGameObjectWithTag("Heater");
         heaterRB = heater.GetComponent<Rigidbody2D>();
         slider = sliderGameObject.GetComponent<Slider>();
@@ -34,17 +39,21 @@ public class BoilIngredient : MonoBehaviour
 
             if (timer >= 0.05)
             {
+                if(sliderIncrimented >= 1)
+                {
+                    spriteRenderer.sprite = heatedSprite;
+                }
                 if (sliderIncrimented <= 1)
                 {
                     timer = 0f;
                     boiling.Play();
-                    sliderIncrimented += 0.005f;
+                    sliderIncrimented += underdoneIncriment;
                     slider.value = sliderIncrimented;
                     sliderFill.color = Color.Lerp(Color.gray, Color.green, sliderIncrimented);
                 }
                 else
                 {
-                    sliderIncrimented += 0.02f; 
+                    sliderIncrimented += overdoneIncriment; 
                     slider.value = sliderIncrimented;
                     sliderFill.color = Color.Lerp(Color.green, Color.red, (sliderIncrimented-1)*4);
                 }

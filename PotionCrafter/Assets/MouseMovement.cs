@@ -22,7 +22,7 @@ public class MouseMovement : MonoBehaviour
         {
             Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             thingToFollowPos.transform.position = new Vector3(cursorPos.x,cursorPos.y,3);
-            if (mouseFrameMovement.magnitude >= 25 && Input.GetMouseButton(0))
+            if (mouseFrameMovement.magnitude >= 5 && Input.GetMouseButton(0))
             {
                 thingToFollowPos.SetActive(true);
             }
