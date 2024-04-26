@@ -25,7 +25,7 @@ public class potiontodoimagechange : MonoBehaviour
 
     void random_order()
     {
-        for (i = 0; i <= 5; ++i)
+        for (i = 0; i <= 15; ++i)
         {
             RandPotion_order = Random.Range(0, 3);
             switch (RandPotion_order)
@@ -49,6 +49,8 @@ public class potiontodoimagechange : MonoBehaviour
             }
         }
     }
+
+
 }
 
 
