@@ -18,10 +18,17 @@ public class CameraButtons : MonoBehaviour
     }
     public void MoveLeft()
     {
-        cam.transform.position = new Vector3(cam.transform.position.x - 22.13f, cam.transform.position.y, cam.transform.position.z);
+        if (cam.transform.position.x >= -8)
+        {
+            cam.transform.position = new Vector3(cam.transform.position.x - 22.13f, cam.transform.position.y, cam.transform.position.z);
+        }
+        
     }
     public void MoveRight() 
     {
-        cam.transform.position = new Vector3(cam.transform.position.x + 22.13f, cam.transform.position.y, cam.transform.position.z);
+        if (cam.transform.position.x <= 44)
+        {
+            cam.transform.position = new Vector3(cam.transform.position.x + 22.13f, cam.transform.position.y, cam.transform.position.z);
+        }
     }
 }
