@@ -304,9 +304,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood1SliceObject Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6866480891493112318, guid: 30593fc37db5d4f4f8f8544a244e28a4, type: 3}
+      propertyPath: offset.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6866480891493112318, guid: 30593fc37db5d4f4f8f8544a244e28a4, type: 3}
+      propertyPath: offset.y
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7338746960170976461, guid: 30593fc37db5d4f4f8f8544a244e28a4, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022818069193510733, guid: 30593fc37db5d4f4f8f8544a244e28a4, type: 3}
+      propertyPath: offset.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022818069193510733, guid: 30593fc37db5d4f4f8f8544a244e28a4, type: 3}
+      propertyPath: offset.y
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8211313766670144898, guid: 30593fc37db5d4f4f8f8544a244e28a4, type: 3}
       propertyPath: m_Points.Array.data[0].x
