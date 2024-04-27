@@ -10,6 +10,7 @@ public class potiontodoimagechange : MonoBehaviour
     public Sprite sp4;
     public static float RandPotion_order = 0f;
     public int i =0;
+    string potionwanted = "";
     // Start is called before the first frame update
     void Start()
     {
@@ -25,22 +26,26 @@ public class potiontodoimagechange : MonoBehaviour
 
     void random_order()
     {
-        for (i = 0; i <= 15; ++i)
+        for (i = 0; i <= 6; ++i)
         {
-            RandPotion_order = Random.Range(0, 3);
+            RandPotion_order = Random.Range(0, 4);
             switch (RandPotion_order)
             {
                 case 0:
                     GetComponent<SpriteRenderer>().sprite = sp1;
+                    potionwanted = "P_antidote";
                     break;
                 case 1:
                     GetComponent<SpriteRenderer>().sprite = sp2;
+                    potionwanted = "P_speed";
                     break;
                 case 2:
                     GetComponent<SpriteRenderer>().sprite = sp3;
+                    potionwanted = "P_base";
                     break;
                 case 3:
                     GetComponent<SpriteRenderer>().sprite = sp4;
+                    potionwanted = "P_4";
                     break;
                 default:
                     Debug.Log("ERROR: end of switch case (to do list)");
@@ -49,6 +54,20 @@ public class potiontodoimagechange : MonoBehaviour
             }
         }
     }
+
+    void OnTriggerEnter2D(Collider2D collision) // potion collides with order //
+    {
+        
+        if (gameObject.name == potionwanted)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+        }
+    }
+        
+
 
 
 }

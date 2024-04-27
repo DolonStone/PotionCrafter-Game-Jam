@@ -8,6 +8,7 @@ public class dragthepotion : MonoBehaviour
     Vector2 difference = Vector2.zero;
     bool givecustomer = false;
     //public static int num = 0;
+    float currentcusnum = 0;
     public static float Randnumcus = 0f;
     public static float Randnumpotion = 0f;
     [SerializeField] private Vector3 setPosition;
@@ -51,12 +52,17 @@ public class dragthepotion : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) & givecustomer == true) // if player has let go of potion and it collides with the customer //
         {
+            currentcusnum = Randnumcus;
             int currentcustomer = (int)CustomerSpriteChange.customernum;
-            if (currentcustomer == Randnumcus)
+            while (currentcusnum == Randnumcus)
             {
-                Randnumcus = Random.Range(0, 4);
+                    if (currentcustomer == Randnumcus)
+                    {
+                        Randnumcus = Random.Range(0, 5);
+                    }
             }
-            Randnumpotion = Random.Range(0, 3);
+
+            Randnumpotion = Random.Range(0, 4);
             givecustomer = false;
 
             //num++; // havent figured out how to randomise yet so for now customers have an order, this should be temp //
