@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ingredient : MonoBehaviour
 {
-    public MonoBehaviour test;
+    public string ingredientName;
     public float quality;
     private void Update()
     {
@@ -16,6 +16,9 @@ public class ingredient : MonoBehaviour
         {
             quality = gameObject.GetComponent<BoilIngredient>().sliderIncrimented;
         }
-
+        else if (gameObject.GetComponent<potionObjectScript>() != null)
+        {
+            quality = gameObject.GetComponent<potionObjectScript>().quality;
+        }
     }
 }

@@ -136,6 +136,10 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[14].y
       value: 0.071707815
       objectReference: {fileID: 0}
+    - target: {fileID: 950564847893177641, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: ingredientName
+      value: Chalk
+      objectReference: {fileID: 0}
     - target: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_Name
       value: ChalkSquashableIngredient Variant
@@ -146,7 +150,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 09418817233192241a130212298b701b, type: 3}
     - target: {fileID: 3336728031357236744, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: incrimentDividingFactor
-      value: 417
+      value: 184
       objectReference: {fileID: 0}
     - target: {fileID: 3788664386803105502, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,7 +5,8 @@ using UnityEngine;
 public class MortarDisableFront : MonoBehaviour
 {
     public SpriteRenderer frontbowl;
-
+    public List<GameObject> gameObjectsWithin;
+    public List<ingredient> ingredientScriptsWithin;
     public int itemsWithin = 0;
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class MortarDisableFront : MonoBehaviour
         if (itemsWithin == 0)
         {
             frontbowl.enabled = true;
+            gameObjectsWithin.Clear();
         }
         else
         {
@@ -29,14 +31,23 @@ public class MortarDisableFront : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        itemsWithin += 1;
+        if (collision.isTrigger)
+        {
+            itemsWithin += 1;
+            gameObjectsWithin.Add(collision.gameObject);
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        itemsWithin -= 1;
+        if (collision.isTrigger)
+        {
+            itemsWithin -= 1;
+            gameObjectsWithin.Remove(collision.gameObject);
+        }
     }
-    
+
 
 
 }

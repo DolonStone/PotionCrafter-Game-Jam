@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 950564847893177641, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: ingredientName
+      value: Vigour
+      objectReference: {fileID: 0}
     - target: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_Name
       value: VigourBerrySquashableIngredient Variant
