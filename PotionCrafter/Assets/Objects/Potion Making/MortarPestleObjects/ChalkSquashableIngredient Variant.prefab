@@ -140,6 +140,10 @@ PrefabInstance:
       propertyPath: ingredientName
       value: Chalk
       objectReference: {fileID: 0}
+    - target: {fileID: 1120572330142510636, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: m_Radius
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_Name
       value: ChalkSquashableIngredient Variant
@@ -166,7 +170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.03
+      value: 68.7
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.y

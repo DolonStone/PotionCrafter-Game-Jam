@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33831f53960a4b741b0311c9ac09bfd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singlesliced: {fileID: 2972789649695009944, guid: 5ecb44342ee35d94189df1abb05238b1, type: 3}
+  singlesliced: {fileID: 5055707861994459789, guid: de05da955c3ba3a41ba6f6ab36c95099, type: 3}
   slicer: {fileID: 0}
   knifeSpeed: {x: 0, y: 0, z: 0}
 --- !u!60 &303705544955534926
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33831f53960a4b741b0311c9ac09bfd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singlesliced: {fileID: 2972789649695009944, guid: 5ecb44342ee35d94189df1abb05238b1, type: 3}
+  singlesliced: {fileID: 5055707861994459789, guid: de05da955c3ba3a41ba6f6ab36c95099, type: 3}
   slicer: {fileID: 0}
   knifeSpeed: {x: 0, y: 0, z: 0}
 --- !u!60 &890274034291360229

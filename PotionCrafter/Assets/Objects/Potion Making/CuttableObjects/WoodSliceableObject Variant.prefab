@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_Points.Array.data[1].y
       value: -0.014784725
       objectReference: {fileID: 0}
+    - target: {fileID: 5574092891285863208, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
+      propertyPath: singlesliced
+      value: 
+      objectReference: {fileID: 2802491735927386367, guid: d4e4f0c7a5660594c83f091e4d9628cc, type: 3}
     - target: {fileID: 7512931301768286332, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_Name
       value: WoodSliceableObject Variant
