@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Resource collecting.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Potion Making.unity
+    guid: efdbbd9f09d8bbb4893624ac309ecceb
+  - enabled: 1
+    path: Assets/Scenes/Potion Selling.unity
+    guid: 1b6e0e10e085d5449a5e90c581ef48a0
   m_configObjects: {}
