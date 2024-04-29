@@ -17,7 +17,7 @@ public class SlicableObject : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             knifeSpeed = slicer.GetComponent<MouseMovement>().mouseFrameMovement;
-            if (knifeSpeed.magnitude >= 25)
+            if (knifeSpeed.magnitude >= 15)
             {
                 var newObject = Instantiate(singlesliced, transform.position, transform.rotation);
                 for(int i = 0; i< 2; i++)

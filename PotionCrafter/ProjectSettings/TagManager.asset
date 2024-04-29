@@ -3,14 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - destroyparticles
-  - Destroyer
-  - Mortar
-  - Pestle
-  - Ingredient
-  - Slicer
-  - Item
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -18,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Ingredient
+  - 
   - 
   - 
   - 
@@ -45,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3987269017
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

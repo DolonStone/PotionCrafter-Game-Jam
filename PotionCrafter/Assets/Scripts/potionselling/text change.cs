@@ -23,23 +23,23 @@ public class textchange : MonoBehaviour
         {
             case 0:
                 //Debug.Log("text change");
-                CustomerText.text = "pink";
-                potionwanted = "P_magenta";
+                CustomerText.text = "Can I have an antidote potion please?";
+                potionwanted = "P_antidote";
                 break;
             case 1:
                 //Debug.Log("text change");
-                CustomerText.text = "love";
-                potionwanted = "P_love";
+                CustomerText.text = "Can I get a speed potion please?";
+                potionwanted = "P_speed";
                 break;
             case 2:
                 //Debug.Log("text change");
-                CustomerText.text = "green";
-                potionwanted = "P_green";
+                CustomerText.text = "Just a base solution please.";
+                potionwanted = "P_base";
                 break;
             case 3:
                 //Debug.Log("text change");
-                CustomerText.text = "flower";
-                potionwanted = "P_flower";
+                CustomerText.text = "Do you have any [4th potion]";
+                potionwanted = "P_4";
                 break;
             default:
                 Debug.Log("ERROR: end of switch case");
