@@ -5,7 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public string itemName;
-    private int quantity = 1;
+    public int quantity = 1;
     public Sprite itemSprite;
     public GameObject prefab;
     
