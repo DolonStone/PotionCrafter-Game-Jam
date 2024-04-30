@@ -5,7 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public string itemName;
-    public int quantity;
+    private int quantity = 1;
     public Sprite itemSprite;
     public GameObject prefab;
     
@@ -17,8 +17,7 @@ public class Item : MonoBehaviour
         {
             InventoryManager.instance.AddItem(this.gameObject);
 
-            Debug.Log("Item Collected: " + itemName);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         if (other.CompareTag("InventoryBin"))
         {
