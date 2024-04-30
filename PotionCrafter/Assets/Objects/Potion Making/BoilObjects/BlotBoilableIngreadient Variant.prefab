@@ -8,6 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2636174170744772851, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 6101849812086880521}
+    - target: {fileID: -2636174170744772851, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
+      propertyPath: itemName
+      value: Blot
+      objectReference: {fileID: 0}
+    - target: {fileID: -2636174170744772851, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
+      propertyPath: itemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d84382dc515aed7459081720fe5d5992, type: 3}
     - target: {fileID: 5774120016863951712, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.06
@@ -93,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059d3f5593f7512478b38226d1e7549b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: 
+  ingredientName: Blot
   quality: 0
 --- !u!58 &9058365947640065674
 CircleCollider2D:

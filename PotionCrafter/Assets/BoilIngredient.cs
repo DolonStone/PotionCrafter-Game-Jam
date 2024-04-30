@@ -7,7 +7,7 @@ public class BoilIngredient : MonoBehaviour
 {
     public GameObject sliderGameObject;
     private GameObject heater;
-    private Rigidbody2D heaterRB;
+    
     public ParticleSystem boiling;
     private Slider slider;
     public Image sliderFill;
@@ -23,7 +23,7 @@ public class BoilIngredient : MonoBehaviour
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         heater = GameObject.FindGameObjectWithTag("Heater");
-        heaterRB = heater.GetComponent<Rigidbody2D>();
+        
         slider = sliderGameObject.GetComponent<Slider>();
     }
     private void OnTriggerStay2D(Collider2D collision)

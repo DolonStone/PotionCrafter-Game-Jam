@@ -92,10 +92,26 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].y
       value: 0.018620603
       objectReference: {fileID: 0}
+    - target: {fileID: 950564847893177641, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: ingredientName
+      value: Reeds
+      objectReference: {fileID: 0}
     - target: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_Name
       value: ReedSquashableIngreadient Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 42151279207625366}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: itemName
+      value: Reeds
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: itemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c7e4f810c3007c540a9f55b962805bbb, type: 3}
     - target: {fileID: 3336728031357236744, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: SquashedSprite
       value: 
@@ -188,6 +204,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8783614594616657132}
   m_SourcePrefab: {fileID: 100100000, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+--- !u!1 &42151279207625366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+  m_PrefabInstance: {fileID: 1630306548225777544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7464072071135308669 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8157625493656614133, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}

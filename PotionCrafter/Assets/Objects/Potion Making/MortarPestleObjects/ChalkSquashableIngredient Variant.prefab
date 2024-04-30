@@ -148,6 +148,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChalkSquashableIngredient Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 6571528859551675747}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: itemName
+      value: Chalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: itemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c176d65b06c76974ba5486a8abc4d097, type: 3}
     - target: {fileID: 3336728031357236744, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: SquashedSprite
       value: 
@@ -170,15 +182,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 68.7
+      value: -4.4101143
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.02
+      value: -0.96600175
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.17250234
+      value: 0.27205536
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalRotation.w
@@ -225,3 +237,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+--- !u!1 &6571528859551675747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+  m_PrefabInstance: {fileID: 5550407100075350141}
+  m_PrefabAsset: {fileID: 0}

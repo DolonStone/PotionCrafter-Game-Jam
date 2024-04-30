@@ -16,6 +16,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SugarCaneSquashableIngredient Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 6773145908035896240}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: itemName
+      value: Sugar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+      propertyPath: itemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 89c4e8ec8aa3c484cae7f5d6a620e466, type: 3}
     - target: {fileID: 3336728031357236744, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: SquashedSprite
       value: 
@@ -30,15 +42,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.319355
+      value: -4.37
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.090866
+      value: -3.07
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.17250234
+      value: 0.27205536
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalRotation.w
@@ -77,3 +89,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+--- !u!1 &6773145908035896240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+  m_PrefabInstance: {fileID: 5461405263919378094}
+  m_PrefabAsset: {fileID: 0}

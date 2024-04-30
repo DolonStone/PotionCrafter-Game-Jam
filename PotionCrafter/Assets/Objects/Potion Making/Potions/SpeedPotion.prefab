@@ -340,6 +340,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedPotion
       objectReference: {fileID: 0}
+    - target: {fileID: 5651607223006987706, guid: d4b8ee4ee1be6724ab4bfe1fdf4e8f38, type: 3}
+      propertyPath: itemName
+      value: SpeedPotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651607223006987706, guid: d4b8ee4ee1be6724ab4bfe1fdf4e8f38, type: 3}
+      propertyPath: itemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 01039395f103d294eb1994760dda1781, type: 3}
     - target: {fileID: 6412158697729840591, guid: d4b8ee4ee1be6724ab4bfe1fdf4e8f38, type: 3}
       propertyPath: m_Radius
       value: 1.29
@@ -404,6 +412,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 01039395f103d294eb1994760dda1781, type: 3}
+    - target: {fileID: 7602789393379744705, guid: d4b8ee4ee1be6724ab4bfe1fdf4e8f38, type: 3}
+      propertyPath: ingredientName
+      value: SpeedPotion
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6412158697729840591, guid: d4b8ee4ee1be6724ab4bfe1fdf4e8f38, type: 3}
     m_RemovedGameObjects: []

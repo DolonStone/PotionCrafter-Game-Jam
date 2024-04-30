@@ -26,32 +26,38 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     public int SlotID; // Set in the Inspector to Desginate which slot this item represents
     public GameObject SpriteDisplay; // the Sprite display Game object Set in the Inspector.
-    private int Amount = 0;
+    public int Amount = 0;
     public GameObject CounterText; // The text Renderer component assigned in Inspector. (Would recomend making this a child of the object)
     public string ItmName; // the name of the currently stored object
     public GameObject selectedShader;
     public bool thisItemSelected;
-    public Item item;
+    public Item itemScript;
     private InventoryManager inventoryManager;
-    public GameObject[] itemPrefabs;
+    public GameObject itemObject;
     public int prefabIndex;
     private GameObject Player;
     private Transform transformer;
     public GameObject Gru;
+    private GameObject cam;
 
     /*private void Start()
      {
          InventoryManager.instance = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager.instance>();
      }*/
 
-    public void UpdateSlot(Item newitem, int itmAmount)
+    public void UpdateSlot(GameObject newitem, int itmAmount)
     {
+        
         Amount = itmAmount;
+        itemScript = newitem.GetComponent<Item>();
         SpriteDisplay.GetComponent<Image>().enabled = true; // Switches on the Sprite display component.
-        SpriteDisplay.GetComponent<Image>().sprite = newitem.itemSprite;
+        SpriteDisplay.GetComponent<Image>().sprite = itemScript.itemSprite;
         CounterText.GetComponent<TextMeshProUGUI>().text = Amount.ToString();
-        ItmName = newitem.itemName;
-        item = newitem;
+        ItmName = newitem.GetComponent<Item>().itemName;
+
+        
+        //print(item);
+        itemObject = newitem;
         // this.item = item;
         Debug.Log(ItmName);
         // return;
@@ -78,7 +84,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnRightClick(int prefabIndex)
     {
-        if (prefabIndex < 0 || prefabIndex >= itemPrefabs.Length)
+        if (prefabIndex < 0)// || prefabIndex >= itemPrefabs.Length)
         {
             Debug.LogError("Nope, you fucked up");
             return;
@@ -88,13 +94,36 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         {
             Amount -= 1;
             CounterText.GetComponent<TextMeshProUGUI>().text = Amount.ToString();
-            Player = GameObject.FindWithTag("Player"); // gets player object
-            transformer = Player.transform; // takes his location
-            Gru = new GameObject(); // makes a new dummy spawner game object
-            Gru.transform.position = (transformer.position); //sets its transform position to be the same as the players.
-            Gru.transform.position += new Vector3(-2.5f, 0, 0); // applys the ofset. (should no longer affect the player character)
-        GameObject droppedItem = Instantiate(itemPrefabs[prefabIndex], Gru.transform.position, Quaternion.identity); // and poops out the Correct object at the correct position 
+            if (GameObject.FindWithTag("Player") != null)
+            {
+                Player = GameObject.FindWithTag("Player"); // gets player object
+                transformer = Player.transform; // takes his location
+                Gru = new GameObject(); // makes a new dummy spawner game object
+                Gru.transform.position = (transformer.position); //sets its transform position to be the same as the players.
+                Gru.transform.position += new Vector3(-2.5f, 0, 0); // applys the ofset. (should no longer affect the player character)
+                itemObject.transform.position = Gru.transform.position;
+                itemObject.SetActive(true); // and poops out the Correct object at the correct position 
+                //GameObject droppedItem = Instantiate(itemPrefab, Gru.transform.position, Quaternion.identity);
 
+            }
+            else
+            {
+                
+                cam = GameObject.FindWithTag("MainCamera");
+                Gru = new GameObject();
+                Gru.transform.position = cam.transform.position;
+                if (Amount > 0)
+                {
+                    GameObject droppedItem = Instantiate(itemScript.prefab, Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10), Quaternion.identity);
+                }
+                else
+                {
+                    itemObject.transform.position = Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10);
+                    itemObject.SetActive(true);
+                }
+                //GameObject droppedItem = Instantiate(itemPrefab, Gru.transform.position += new Vector3(-8.05f+(prefabIndex*2),4.85f,0), Quaternion.identity);
+
+            }
             //droppedItem.AddComponent<BoxCollider>(); It should allready have one.
             Debug.Log("Wowwee the quantity is " + Amount);
         }
@@ -107,10 +136,12 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
-        public void ClearSlot()
+    public void ClearSlot()
     {
         Amount = 0;
         ItmName = "";
+        itemScript = null;
+        itemObject = null;
         return;
     }
 }

@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mortar
+  - Pestle
+  - Slicer
+  - Heater
+  - Container
+  - Ingredient
+  - Destroyer
+  - destroyparticles
+  - InventoryBin
   layers:
   - Default
   - TransparentFX

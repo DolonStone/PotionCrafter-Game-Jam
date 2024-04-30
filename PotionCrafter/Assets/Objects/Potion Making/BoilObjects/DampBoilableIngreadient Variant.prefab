@@ -8,17 +8,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2636174170744772851, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 5968267776690430298}
+    - target: {fileID: -2636174170744772851, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
+      propertyPath: itemName
+      value: Charcoal
+      objectReference: {fileID: 0}
+    - target: {fileID: -2636174170744772851, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
+      propertyPath: itemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 087b7eacd745bc847827963b500fe72e, type: 3}
+    - target: {fileID: 503290160935296648, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
+      propertyPath: ingredientName
+      value: Charcoal
+      objectReference: {fileID: 0}
     - target: {fileID: 5774120016863951712, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.74
+      value: -6.03
       objectReference: {fileID: 0}
     - target: {fileID: 5774120016863951712, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.788635
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 5774120016863951712, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.9072511
+      value: -0.95362556
       objectReference: {fileID: 0}
     - target: {fileID: 5774120016863951712, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
       propertyPath: m_LocalRotation.w

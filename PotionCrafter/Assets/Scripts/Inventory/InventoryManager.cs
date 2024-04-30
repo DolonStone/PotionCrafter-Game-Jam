@@ -71,7 +71,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryHud;
     private bool menuActivated;
     public static InventoryManager instance; // Checks this is the only instance
-    private Dictionary<string, Item> inventory; // Stores information
+    private Dictionary<string, GameObject> inventory; // Stores information
     public int NextSlot; // used to designate the next inventory slot to target. (May want a max slots to prevent adding items to non exsistant slots.)
     public Text quantityText;
     public GameObject[] ItmSlots;
@@ -111,22 +111,23 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        inventory = new Dictionary<string, Item>();
+        inventory = new Dictionary<string, GameObject>();
     }
 
     //Adds item to inventory
 
-    public void AddItem(Item item)
+    public void AddItem(GameObject itemObject)
     {
-
-        if (inventory.ContainsKey(item.itemName))
+        var itemscript = itemObject.GetComponent<Item>();
+        if (((inventory.ContainsKey(itemscript.itemName)) && GameObject.FindWithTag("Player") != null) || (inventory.ContainsKey(itemscript.itemName))&&itemObject.CompareTag("StackableIngredient"))//checks if it exists already in the inventory, and if we are in resource collection so it doesnt mess with quality variables
         {
-            inventory[item.itemName].quantity += item.quantity;
+            inventory[itemscript.itemName].GetComponent<Item>().quantity += itemscript.quantity;
             for (int i = 0; i < ItmSlots.Length; i++)
             { // Checks each Child for its Code component.
-                if (ItmSlots[i].GetComponent<ItemSlot>().ItmName == item.itemName)
+                if (ItmSlots[i].GetComponent<ItemSlot>().ItmName == itemscript.itemName)
                 {
-                    ItmSlots[i].GetComponent<ItemSlot>().UpdateSlot(inventory[item.itemName], inventory[item.itemName].quantity);
+                    
+                    ItmSlots[i].GetComponent<ItemSlot>().UpdateSlot(inventory[itemscript.itemName], inventory[itemscript.itemName].GetComponent<Item>().quantity);
                 }
 
             }
@@ -134,8 +135,12 @@ public class InventoryManager : MonoBehaviour
 
         else
         {
-            inventory.Add(item.itemName, item.item);
-            ItmSlots[NextSlot].GetComponent<ItemSlot>().UpdateSlot(inventory[item.itemName], inventory[item.itemName].quantity);
+            if (inventory.ContainsKey(itemscript.itemName))
+            {
+                itemscript.itemName += " 1";
+            }
+            inventory.Add(itemscript.itemName, itemObject);
+            ItmSlots[NextSlot].GetComponent<ItemSlot>().UpdateSlot(inventory[itemscript.itemName], inventory[itemscript.itemName].GetComponent<Item>().quantity);
             for (int i = 0; i < ItmSlots.Length; i++)
             {
                 if (ItmSlots[i].GetComponent<ItemSlot>().ItmName == "")
@@ -174,10 +179,10 @@ public class InventoryManager : MonoBehaviour
     {
         if (inventory.ContainsKey(itemName))
         {
-            inventory[itemName].quantity -= quantity;
+            //inventory[itemName].GetComponent<Item>().quantity -= quantity;
 
-            if (inventory[itemName].quantity <= 0)
-            {
+            //if (inventory[itemName].GetComponent<Item>().quantity <= 0)
+            
 
                 for (int i = 0; i < ItmSlots.Length; i++)
                 {
@@ -195,7 +200,7 @@ public class InventoryManager : MonoBehaviour
                         break;
                     }
                 }
-            }
+            
 
             if (onInventoryChangedCallback != null)
             {
@@ -215,7 +220,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (inventory.ContainsKey(itemName))
         {
-            return inventory[itemName].quantity;
+            return inventory[itemName].GetComponent<Item>().quantity;
         }
         return 0;
     }

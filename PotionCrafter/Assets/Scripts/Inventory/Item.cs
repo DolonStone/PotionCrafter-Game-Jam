@@ -8,17 +8,24 @@ public class Item : MonoBehaviour
     public int quantity;
     public Sprite itemSprite;
     public GameObject prefab;
-
-    public Item item;
+    
+    //public Item item;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            InventoryManager.instance.AddItem(this);
+            InventoryManager.instance.AddItem(this.gameObject);
 
             Debug.Log("Item Collected: " + itemName);
             Destroy(gameObject);
+        }
+        if (other.CompareTag("InventoryBin"))
+        {
+            
+            InventoryManager.instance.AddItem(this.gameObject);
+
+            gameObject.SetActive(false);
         }
     }
     /*public string itemName;

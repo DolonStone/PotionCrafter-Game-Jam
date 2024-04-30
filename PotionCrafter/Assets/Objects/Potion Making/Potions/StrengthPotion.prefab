@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 367992322088604177, guid: a34dfd41d58deb94b867e9ab18687963, type: 3}
+      propertyPath: itemName
+      value: StrengthPotion
+      objectReference: {fileID: 0}
     - target: {fileID: 1256095261574815019, guid: a34dfd41d58deb94b867e9ab18687963, type: 3}
       propertyPath: m_LocalPosition.x
       value: 44.15
@@ -47,6 +51,10 @@ PrefabInstance:
     - target: {fileID: 1256095261574815019, guid: a34dfd41d58deb94b867e9ab18687963, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519585245074115690, guid: a34dfd41d58deb94b867e9ab18687963, type: 3}
+      propertyPath: ingredientName
+      value: StrengthPotion
       objectReference: {fileID: 0}
     - target: {fileID: 7539311395697606532, guid: a34dfd41d58deb94b867e9ab18687963, type: 3}
       propertyPath: m_Name
