@@ -48,7 +48,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     public void UpdateSlot(GameObject newitem, int itmAmount)
     {
         
-        Amount = itmAmount;
+        Amount += itmAmount;
         itemScript = newitem.GetComponent<Item>();
         SpriteDisplay.GetComponent<Image>().enabled = true; // Switches on the Sprite display component.
         SpriteDisplay.GetComponent<Image>().sprite = itemScript.itemSprite;
@@ -115,10 +115,13 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                 if (Amount > 0)
                 {
                     GameObject droppedItem = Instantiate(itemScript.prefab, Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10), Quaternion.identity);
+                    droppedItem.GetComponent<Item>().quantity = 1;
+                    droppedItem.SetActive(true);
                 }
                 else
                 {
                     itemObject.transform.position = Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10);
+                    itemObject.GetComponent<Item>().quantity = 1;
                     itemObject.SetActive(true);
                 }
                 //GameObject droppedItem = Instantiate(itemPrefab, Gru.transform.position += new Vector3(-8.05f+(prefabIndex*2),4.85f,0), Quaternion.identity);

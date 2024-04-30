@@ -121,7 +121,7 @@ public class InventoryManager : MonoBehaviour
         var itemscript = itemObject.GetComponent<Item>();
         if (((inventory.ContainsKey(itemscript.itemName)) && GameObject.FindWithTag("Player") != null) || (inventory.ContainsKey(itemscript.itemName))&&itemObject.CompareTag("StackableIngredient"))//checks if it exists already in the inventory, and if we are in resource collection so it doesnt mess with quality variables
         {
-            inventory[itemscript.itemName].GetComponent<Item>().quantity += itemscript.quantity;
+            //inventory[itemscript.itemName].GetComponent<Item>().quantity += itemscript.quantity;
             for (int i = 0; i < ItmSlots.Length; i++)
             { // Checks each Child for its Code component.
                 if (ItmSlots[i].GetComponent<ItemSlot>().ItmName == itemscript.itemName)
