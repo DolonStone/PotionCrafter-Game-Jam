@@ -146,15 +146,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.84314
+      value: -11.158392
       objectReference: {fileID: 0}
     - target: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3166187
+      value: 0.8828449
       objectReference: {fileID: 0}
     - target: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.50449455
       objectReference: {fileID: 0}
     - target: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -162,15 +162,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -224,6 +224,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7512931301768286332, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8267206311202584409}
+    - targetCorrespondingSourceObject: {fileID: 7512931301768286332, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3525079413274273933}
   m_SourcePrefab: {fileID: 100100000, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
 --- !u!1 &4525950861721704142 stripped
 GameObject:
@@ -279,3 +282,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.009}
   serializedVersion: 2
   m_Radius: 0.03
+--- !u!114 &3525079413274273933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4525950861721704142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6433c3495ce73a49b7974588743a648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Wood
+  quantity: 1
+  itemSprite: {fileID: 0}
+  prefab: {fileID: 4525950861721704142}

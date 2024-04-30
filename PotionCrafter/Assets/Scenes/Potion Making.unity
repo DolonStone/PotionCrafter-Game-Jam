@@ -2523,6 +2523,7 @@ Transform:
   - {fileID: 491703311}
   - {fileID: 21703403}
   - {fileID: 2020801900}
+  - {fileID: 1641656398}
   m_Father: {fileID: 1984272641}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790203672
@@ -3091,6 +3092,11 @@ MonoBehaviour:
   speedPotionObject: {fileID: 8450341039952080401, guid: ccfe1764c9bf87544bab20d702922b25, type: 3}
   antidotePotionObject: {fileID: 7539311395697606532, guid: a34dfd41d58deb94b867e9ab18687963, type: 3}
   strengthPotionObject: {fileID: 2543012383629807575, guid: 552339c15ef3b15468bfa016b50f423f, type: 3}
+--- !u!1 &900835708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7512931301768286332, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
+  m_PrefabInstance: {fileID: 2120519467}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &904651950
 GameObject:
   m_ObjectHideFlags: 0
@@ -6226,7 +6232,7 @@ GameObject:
   - component: {fileID: 1641656397}
   - component: {fileID: 1641656399}
   m_Layer: 0
-  m_Name: Square
+  m_Name: InventoryBin
   m_TagString: InventoryBin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6292,12 +6298,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641656396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.99, y: -4.3, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.190002, y: -4.67, z: 10}
   m_LocalScale: {x: 2.3875, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 757943177}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1641656399
 BoxCollider2D:
@@ -7351,11 +7357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.47
+      value: -5.83
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.77
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 4328725288224110242, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8465,13 +8471,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7512931301768286332, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2120519475}
   m_SourcePrefab: {fileID: 100100000, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
 --- !u!4 &2120519468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3518703064489690522, guid: d7dc5b0270f538149a0f121378ccdacc, type: 3}
   m_PrefabInstance: {fileID: 2120519467}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2120519475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900835708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6433c3495ce73a49b7974588743a648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  quantity: 0
+  itemSprite: {fileID: 0}
+  prefab: {fileID: 0}
 --- !u!1 &2139322097
 GameObject:
   m_ObjectHideFlags: 0
@@ -8676,10 +8701,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 96069693}
     m_Modifications:
-    - target: {fileID: 2006077181345398170, guid: d8569eea54a5954438cbdd2a185b0985, type: 3}
-      propertyPath: singlesliced
-      value: 
-      objectReference: {fileID: 2802491735927386367, guid: d4e4f0c7a5660594c83f091e4d9628cc, type: 3}
     - target: {fileID: 4525950861721704142, guid: d8569eea54a5954438cbdd2a185b0985, type: 3}
       propertyPath: m_Name
       value: WoodSliceableObject
@@ -8801,10 +8822,6 @@ PrefabInstance:
     - target: {fileID: 3799510973657072076, guid: 9005704529df0f544b185c2372ec5067, type: 3}
       propertyPath: m_Name
       value: FeatherSliceableObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 6202780528881750295, guid: 9005704529df0f544b185c2372ec5067, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7794932591193494570, guid: 9005704529df0f544b185c2372ec5067, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9092,5 +9109,4 @@ SceneRoots:
   - {fileID: 1238700224}
   - {fileID: 593809106}
   - {fileID: 803386367}
-  - {fileID: 1641656398}
   - {fileID: 2024856752}
