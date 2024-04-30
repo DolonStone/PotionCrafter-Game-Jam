@@ -29,7 +29,7 @@ public class PotionCombining : MonoBehaviour
     void Update()
     {
         MakePotion();
-
+        //test
         
     }
     void MakePotion()
