@@ -8,12 +8,7 @@ public class MCMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Vector2 movement;
 
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-    // Update is called once per frame
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -21,6 +16,6 @@ public class MCMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
+        rb.MovePosition(rb.position + (speed * Time.fixedDeltaTime * movement));
     }
 }

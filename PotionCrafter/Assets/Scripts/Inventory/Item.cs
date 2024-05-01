@@ -13,20 +13,25 @@ public class Item : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (InventoryManager.instance.full == false || (gameObject.CompareTag("StackableIngredient") && InventoryManager.instance.HasItem(itemName)))
         {
-            InventoryManager.instance.AddItem(this.gameObject);
 
-            gameObject.SetActive(false);
-        }
-        if (other.CompareTag("InventoryBin"))
-        {
-            
-            InventoryManager.instance.AddItem(this.gameObject);
+        
+            if (other.CompareTag("Player"))
+            {
+                InventoryManager.instance.AddItem(this.gameObject);
+        
+                gameObject.SetActive(false);
+            }
+            if (other.CompareTag("InventoryBin"))
+            {
 
-            gameObject.SetActive(false);
+                InventoryManager.instance.AddItem(this.gameObject);
+
+                gameObject.SetActive(false);
+            }
         }
-    }
+}
     /*public string itemName;
     public int quantity;
     public Sprite itemSprite;

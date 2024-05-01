@@ -24,6 +24,8 @@ public class SquashableIngreadient : MonoBehaviour
     public Sprite SquashedSprite;
     private SpriteRenderer spriteRenderer;
     public int incrimentDividingFactor = 100;
+    private AudioSource pestleSound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class SquashableIngreadient : MonoBehaviour
         scaleTotalDif = startScale - minsize;
         slider = sliderGameObject.GetComponent<Slider>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        pestleSound = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -58,6 +61,11 @@ public class SquashableIngreadient : MonoBehaviour
                 {
                     float crushingpower = Mathf.Abs(pestleRb.velocity.magnitude) / incrimentDividingFactor;
                     mushing.Play();
+                    if (!pestleSound.isPlaying)
+                    {
+                        pestleSound.Play();
+                    }
+                   
                     if (transform.localScale.x > minsize)
                     {
                         transform.localScale = new Vector3(transform.localScale.x - crushingpower, transform.localScale.y - crushingpower, transform.localScale.z);
@@ -86,7 +94,7 @@ public class SquashableIngreadient : MonoBehaviour
                 }
                 else
                 {
-
+                    pestleSound.Pause();
                     mushing.Stop();
                 }
             }

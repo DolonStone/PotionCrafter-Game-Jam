@@ -13,7 +13,7 @@ public class PotionCombining : MonoBehaviour
     private List<string> strengthPotion = new() { "BaseSolution", "Blot", "Grot", "Grot","Vigour", "Reeds", "Reeds","Damp"};
     private List<List<string>> potionOptions;
     private int currentPotion; 
-    private string madePotionName;
+
     public GameObject baseSolutionObject, speedPotionObject, antidotePotionObject, strengthPotionObject;
     // Start is called before the first frame update
     void Start()

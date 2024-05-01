@@ -12,10 +12,7 @@ public class CameraButtons : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void MoveLeft()
     {
         if (cam.transform.position.x >= -8)

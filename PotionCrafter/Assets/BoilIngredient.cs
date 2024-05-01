@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BoilIngredient : MonoBehaviour
 {
     public GameObject sliderGameObject;
-    private GameObject heater;
+    
     
     public ParticleSystem boiling;
     private Slider slider;
@@ -17,13 +17,15 @@ public class BoilIngredient : MonoBehaviour
     public float overdoneIncriment = 0.02f;
     public Sprite heatedSprite;
     private SpriteRenderer spriteRenderer;
+    public AudioSource boilingSound;
+    public AudioClip hitsFromThe;
     
     
     private void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        heater = GameObject.FindGameObjectWithTag("Heater");
         
+        boilingSound = gameObject.GetComponent<AudioSource>();
         slider = sliderGameObject.GetComponent<Slider>();
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -32,14 +34,36 @@ public class BoilIngredient : MonoBehaviour
         {
             sliderGameObject.SetActive(true);
         }
+        if (collision.CompareTag("Heater"))
+        {
+            print("testing");
+            if (!boilingSound.isPlaying)
+            {
+                boilingSound.Play();
+            }
+            var random = Random.Range(1, 1000);
+            if(random == 420)
+            {
+                boilingSound.volume = 0.2f;
+                if (boilingSound.clip != hitsFromThe)
+                {
+                    boilingSound.clip = hitsFromThe;
+                    boilingSound.Play();
+                }
+                
+                
+            }
+        }
+
 
         if ((collision.CompareTag("Heater")) && (Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.magnitude)>0.1))
         {
             timer += Time.deltaTime;
 
+
             if (timer >= 0.05)
             {
-                if(sliderIncrimented >= 1)
+                if(sliderIncrimented >= 0.5)
                 {
                     spriteRenderer.sprite = heatedSprite;
                 }
@@ -61,6 +85,7 @@ public class BoilIngredient : MonoBehaviour
 
 
         }
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -69,5 +94,10 @@ public class BoilIngredient : MonoBehaviour
         {
             sliderGameObject.SetActive(false);
         }
+        if (collision.CompareTag("Heater"))
+        {
+            boilingSound.Pause();
+        }
+        
     }
 }

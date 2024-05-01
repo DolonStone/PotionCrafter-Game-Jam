@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4328725288224110242}
   m_Layer: 0
-  m_Name: RossberrySquashableIngredient
+  m_Name: RossberrySquashableIngredient 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,7 +364,7 @@ PrefabInstance:
       addedObject: {fileID: 2055252142543403518}
     - targetCorrespondingSourceObject: {fileID: 2583394494012003198, guid: 0ff2e502d0113db4d912ec57398d916c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 517583806486758863}
+      addedObject: {fileID: 3361539502787472195}
   m_SourcePrefab: {fileID: 100100000, guid: 0ff2e502d0113db4d912ec57398d916c, type: 3}
 --- !u!4 &3788664386803105502 stripped
 Transform:
@@ -496,7 +496,7 @@ MonoBehaviour:
   quantity: 1
   itemSprite: {fileID: 21300000, guid: b38046653a7251d458ef959288e85443, type: 3}
   prefab: {fileID: 1600400160851111198}
---- !u!82 &517583806486758863
+--- !u!82 &3361539502787472195
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -506,7 +506,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fc83d819f74870043a5ab578d5e6d66a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 53964db36d2470b40b6cc41832754e2f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

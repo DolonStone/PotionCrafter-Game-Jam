@@ -8,9 +8,11 @@ public class SlicableObject : MonoBehaviour
     public GameObject slicer;
     public Vector3 knifeSpeed;
     public GameObject cam;
+    
 
     private void Awake()
     {
+        
         cam = GameObject.FindWithTag("MainCamera");
         slicer = GameObject.FindGameObjectWithTag("Slicer");
     }
@@ -22,6 +24,7 @@ public class SlicableObject : MonoBehaviour
             if (knifeSpeed.magnitude >= 25)
             {
                 var newObject = Instantiate(singlesliced, transform.position, transform.rotation);
+                slicer.GetComponent<AudioSource>().PlayOneShot(slicer.GetComponent<AudioSource>().clip, 0.5f);
                 for(int i = 0; i< 2; i++)
                 {
                     newObject.transform.GetChild(i).GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity;
