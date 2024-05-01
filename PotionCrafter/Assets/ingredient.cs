@@ -20,5 +20,14 @@ public class ingredient : MonoBehaviour
         {
             quality = gameObject.GetComponent<potionObjectScript>().quality;
         }
+
+        if (quality > 0 && quality != 1)
+        {
+            gameObject.tag = "Ingredient";
+        }
+        else
+        {
+            gameObject.tag = "StackableIngredient";
+        }
     }
 }

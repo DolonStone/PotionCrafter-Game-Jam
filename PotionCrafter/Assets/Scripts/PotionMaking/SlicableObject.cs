@@ -7,14 +7,16 @@ public class SlicableObject : MonoBehaviour
     public GameObject singlesliced;
     public GameObject slicer;
     public Vector3 knifeSpeed;
+    public GameObject cam;
 
     private void Awake()
     {
+        cam = GameObject.FindWithTag("MainCamera");
         slicer = GameObject.FindGameObjectWithTag("Slicer");
     }
     private void OnMouseExit()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)&&cam.transform.position.x<-10)
         {
             knifeSpeed = slicer.GetComponent<MouseMovement>().mouseFrameMovement;
             if (knifeSpeed.magnitude >= 25)

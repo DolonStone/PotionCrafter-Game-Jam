@@ -115,8 +115,19 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                 if (Amount > 0)
                 {
                     GameObject droppedItem = Instantiate(itemScript.prefab, Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10), Quaternion.identity);
-                    droppedItem.GetComponent<Item>().quantity = 1;
+                    if (droppedItem.GetComponent<Item>()) 
+                    { 
+                        droppedItem.GetComponent<Item>().quantity = 1;
+                    }
+                    else
+                    {
+                        droppedItem.transform.GetChild(0).gameObject.GetComponent<Item>().quantity = 1;
+                        //droppedItem.transform.position = Gru.transform.position;
+                        droppedItem.transform.GetChild(0).gameObject.transform.position = Gru.transform.position;
+                    }
                     droppedItem.SetActive(true);
+                    droppedItem.transform.GetChild(0).gameObject.SetActive(true);
+
                 }
                 else
                 {

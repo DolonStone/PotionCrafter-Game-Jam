@@ -75,7 +75,7 @@ public class InventoryManager : MonoBehaviour
     public int NextSlot; // used to designate the next inventory slot to target. (May want a max slots to prevent adding items to non exsistant slots.)
     public Text quantityText;
     public GameObject[] ItmSlots;
-
+    public bool full;
     // Notifies other scripts over modifications
     public delegate void OnInventoryChanged();
     public OnInventoryChanged onInventoryChangedCallback;
@@ -145,8 +145,13 @@ public class InventoryManager : MonoBehaviour
             {
                 if (ItmSlots[i].GetComponent<ItemSlot>().ItmName == "")
                 {
+                    full = false;
                     NextSlot = i;
                     break;
+                }
+                else
+                {
+                    full = true;
                 }
             }
 

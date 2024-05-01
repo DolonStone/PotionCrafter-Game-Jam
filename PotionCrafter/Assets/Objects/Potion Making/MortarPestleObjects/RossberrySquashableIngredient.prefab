@@ -492,4 +492,4 @@ MonoBehaviour:
   itemName: RossBerry
   quantity: 1
   itemSprite: {fileID: 21300000, guid: b38046653a7251d458ef959288e85443, type: 3}
-  prefab: {fileID: 0}
+  prefab: {fileID: 1600400160851111198}

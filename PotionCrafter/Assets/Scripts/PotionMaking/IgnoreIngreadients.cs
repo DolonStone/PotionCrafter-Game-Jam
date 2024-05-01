@@ -18,7 +18,7 @@ public class IgnoreIngreadients : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ingredient"))
+        if (collision.gameObject.CompareTag("Ingredient") || collision.gameObject.CompareTag("StackableIngredient"))
         {
             Physics2D.IgnoreCollision(thisCollider, collision.gameObject.GetComponent<Collider2D>());
         }
