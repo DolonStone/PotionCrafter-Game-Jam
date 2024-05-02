@@ -12,10 +12,18 @@ public class dragthepotion : MonoBehaviour
     public static float Randnumcus = 0f;
     public static float Randnumpotion = 0f;
     [SerializeField] private Vector3 setPosition;
+    public GameObject potion;
 
+    void Start()
+    {
+        potion.SetActive(true);
+        Randnumpotion = Random.Range(0, 12);
+        Randnumcus = Random.Range(0, 5);
+    }
     public void SetPositionFunction()
     {
-        transform.position = setPosition;
+        potion.SetActive(false);
+        //transform.position = setPosition;
         //givecustomer = false;
     }
 
@@ -47,7 +55,7 @@ public class dragthepotion : MonoBehaviour
     { 
         if (Input.GetMouseButtonUp(0))
         {
-            SetPositionFunction();
+            //SetPositionFunction();
         }
 
         if (Input.GetMouseButtonUp(0) & givecustomer == true) // if player has let go of potion and it collides with the customer //
@@ -62,11 +70,12 @@ public class dragthepotion : MonoBehaviour
                     }
             }
 
-            Randnumpotion = Random.Range(0, 4);
+            Randnumpotion = Random.Range(0, 12);
             givecustomer = false;
+            SetPositionFunction();
 
             //num++; // havent figured out how to randomise yet so for now customers have an order, this should be temp //
-           
+
             //SetPositionFunction();
 
         }
