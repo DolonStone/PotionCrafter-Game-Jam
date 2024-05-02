@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 6101849812086880521}
     - target: {fileID: -2636174170744772851, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
       propertyPath: itemName
-      value: Blot
+      value: BlotBoilableIngreadient Variant
       objectReference: {fileID: 0}
     - target: {fileID: -2636174170744772851, guid: 2eb972602a788a746b3bd06a8d34e26f, type: 3}
       propertyPath: itemSprite

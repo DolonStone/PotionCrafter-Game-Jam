@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 6773145908035896240}
     - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: itemName
-      value: Sugar
+      value: SugarCaneSquashableIngredient Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: itemSprite

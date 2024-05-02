@@ -39,7 +39,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     private Transform transformer;
     public GameObject Gru;
     private GameObject cam;
-
+    public GameObject prefab;
     /*private void Start()
      {
          InventoryManager.instance = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager.instance>();
@@ -54,8 +54,8 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         SpriteDisplay.GetComponent<Image>().sprite = itemScript.itemSprite;
         CounterText.GetComponent<TextMeshProUGUI>().text = Amount.ToString();
         ItmName = newitem.GetComponent<Item>().itemName;
+        prefab = itemScript.prefab;
 
-        
         //print(item);
         itemObject = newitem;
         // this.item = item;
@@ -112,9 +112,9 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                 cam = GameObject.FindWithTag("MainCamera");
                 Gru = new GameObject();
                 Gru.transform.position = cam.transform.position;
-                if (Amount > 0)
+                if (Amount > 0 || itemObject == null)
                 {
-                    GameObject droppedItem = Instantiate(itemScript.prefab, Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10), Quaternion.identity);
+                    GameObject droppedItem = Instantiate(prefab, Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10), Quaternion.identity);
                     if (droppedItem.GetComponent<Item>()) 
                     { 
                         droppedItem.GetComponent<Item>().quantity = 1;

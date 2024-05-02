@@ -8,9 +8,13 @@ public class Item : MonoBehaviour
     public int quantity = 1;
     public Sprite itemSprite;
     public GameObject prefab;
-    
-    //public Item item;
 
+    //public Item item;
+    private void Awake()
+    {
+        prefab = (GameObject)Resources.Load(itemName);
+        
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (InventoryManager.instance.full == false || (gameObject.CompareTag("StackableIngredient") && InventoryManager.instance.HasItem(itemName)))
@@ -31,7 +35,8 @@ public class Item : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
-}
+    }
+
     /*public string itemName;
     public int quantity;
     public Sprite itemSprite;

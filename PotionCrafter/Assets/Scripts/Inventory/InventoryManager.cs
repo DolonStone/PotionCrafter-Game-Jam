@@ -112,6 +112,7 @@ public class InventoryManager : MonoBehaviour
             return;
         }
         inventory = new Dictionary<string, GameObject>();
+        DontDestroyOnLoad(this.gameObject);
     }
 
     //Adds item to inventory
