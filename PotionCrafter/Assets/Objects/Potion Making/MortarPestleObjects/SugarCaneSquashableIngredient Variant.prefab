@@ -111,7 +111,7 @@ PrefabInstance:
     - target: {fileID: 3336728031357236744, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: SquashedSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 89c4e8ec8aa3c484cae7f5d6a620e466, type: 3}
+      objectReference: {fileID: 21300000, guid: a645f18d29f6f824f873849669b3a775, type: 3}
     - target: {fileID: 3788664386803105502, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

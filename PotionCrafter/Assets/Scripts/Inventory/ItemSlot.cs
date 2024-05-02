@@ -124,9 +124,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                         droppedItem.transform.GetChild(0).gameObject.GetComponent<Item>().quantity = 1;
                         //droppedItem.transform.position = Gru.transform.position;
                         droppedItem.transform.GetChild(0).gameObject.transform.position = Gru.transform.position;
+                        droppedItem.transform.GetChild(0).gameObject.SetActive(true);
                     }
                     droppedItem.SetActive(true);
-                    droppedItem.transform.GetChild(0).gameObject.SetActive(true);
+                    
 
                 }
                 else

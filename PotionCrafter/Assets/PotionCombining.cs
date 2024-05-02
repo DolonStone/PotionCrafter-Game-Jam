@@ -18,7 +18,7 @@ public class PotionCombining : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        potionOptions = new() { baseSolution, antidotePotion, speedPotion, strengthPotion};
+        potionOptions = new() { baseSolution, speedPotion, antidotePotion, strengthPotion};
         foreach(List<string> potion in potionOptions)
         {
             potion.Sort();
@@ -42,7 +42,7 @@ public class PotionCombining : MonoBehaviour
         currentIngredientNames.Clear();
         foreach (GameObject ingredientObject in gameObjectsWithin) //This loop gets the contained ingredients name and quality
         {
-            if (ingredientObject.CompareTag("Ingredient"))
+            if (ingredientObject.CompareTag("Ingredient")|| ingredientObject.CompareTag("StackableIngredient"))
             {
                 ingredientsScripts.Add(ingredientObject.GetComponent<ingredient>());
                 quality += ingredientObject.GetComponent<ingredient>().quality;

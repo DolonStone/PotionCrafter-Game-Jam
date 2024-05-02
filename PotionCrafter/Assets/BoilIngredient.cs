@@ -41,7 +41,7 @@ public class BoilIngredient : MonoBehaviour
             {
                 boilingSound.Play();
             }
-            var random = Random.Range(1, 1000);
+            var random = Random.Range(1, 3000);
             if(random == 420)
             {
                 boilingSound.volume = 0.2f;
