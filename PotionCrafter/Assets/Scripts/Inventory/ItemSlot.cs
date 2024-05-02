@@ -114,7 +114,15 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                 Gru.transform.position = cam.transform.position;
                 if (Amount > 0 || itemObject == null)
                 {
+
                     GameObject droppedItem = Instantiate(prefab, Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10), Quaternion.identity);
+                    if (GameObject.FindWithTag("PotionSellingTag"))
+                    {
+                        droppedItem.transform.localScale = new Vector3(6.11030769f, 6.11030769f, 76.3788376f);
+                        droppedItem.AddComponent<dragthepotion>();
+                    }
+                    
+
                     if (droppedItem.GetComponent<Item>()) 
                     { 
                         droppedItem.GetComponent<Item>().quantity = 1;

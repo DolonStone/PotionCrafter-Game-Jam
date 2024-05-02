@@ -10,7 +10,7 @@ public class PotionCombining : MonoBehaviour
     private List<string> speedPotion = new() { "BaseSolution", "Sugar", "Feather", "Feather", "Feather", "Chalk", "Chalk", "Wood" };
     private List<string> baseSolution = new() { "Ross","Ross" };
     private List<string> antidotePotion = new() { "BaseSolution", "Charcoal", "Elf", "Elf" };
-    private List<string> strengthPotion = new() { "BaseSolution", "Blot", "Grot", "Grot","Vigour", "Reeds", "Reeds","Damp"};
+    private List<string> strengthPotion = new() { "BaseSolution", "Blot", "Grot", "Grot","Vigour", "Reeds", "Reeds", "Charcoal" };
     private List<List<string>> potionOptions;
     private int currentPotion; 
 

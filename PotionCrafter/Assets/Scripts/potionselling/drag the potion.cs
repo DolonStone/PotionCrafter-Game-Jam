@@ -16,8 +16,9 @@ public class dragthepotion : MonoBehaviour
 
     void Start()
     {
+        potion = this.gameObject;
         potion.SetActive(true);
-        Randnumpotion = Random.Range(0, 12);
+        Randnumpotion = 2;//Random.Range(0, 12);
         Randnumcus = Random.Range(0, 5);
     }
     public void SetPositionFunction()

@@ -6,4 +6,5 @@ public class potionObjectScript : MonoBehaviour
 {
     public float quality;
 
+
 }

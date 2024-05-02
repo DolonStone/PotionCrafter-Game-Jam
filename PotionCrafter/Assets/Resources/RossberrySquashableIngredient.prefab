@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6433c3495ce73a49b7974588743a648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: RossBerry
+  itemName: RossberrySquashableIngredient
   quantity: 1
   itemSprite: {fileID: 21300000, guid: b38046653a7251d458ef959288e85443, type: 3}
   prefab: {fileID: 1600400160851111198}

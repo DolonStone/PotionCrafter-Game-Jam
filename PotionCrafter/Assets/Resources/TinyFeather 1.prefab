@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6433c3495ce73a49b7974588743a648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: SmallFeather
+  itemName: TinyFeather 1
   quantity: 1
   itemSprite: {fileID: 21300000, guid: 4d72746b379d6d5409ade94e32df001b, type: 3}
   prefab: {fileID: 8205844380054027930}

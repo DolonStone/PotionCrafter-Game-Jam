@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6433c3495ce73a49b7974588743a648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Feather
+  itemName: FeatherSliceableObject Variant
   quantity: 1
   itemSprite: {fileID: 21300000, guid: a90ce77455637b448b3ebc639c4e1e9b, type: 3}
   prefab: {fileID: 3799510973657072076}

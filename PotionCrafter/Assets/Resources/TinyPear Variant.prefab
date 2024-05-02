@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8278133879704277483, guid: 8d7e5c8c82d788349a24d0f072d57e05, type: 3}
       propertyPath: itemName
-      value: Elf
+      value: TinyPear Variant
       objectReference: {fileID: 0}
     - target: {fileID: -8278133879704277483, guid: 8d7e5c8c82d788349a24d0f072d57e05, type: 3}
       propertyPath: itemSprite

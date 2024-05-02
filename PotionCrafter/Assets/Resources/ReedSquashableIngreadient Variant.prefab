@@ -106,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 42151279207625366}
     - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: itemName
-      value: Reeds
+      value: ReedSquashableIngreadient Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: itemSprite

@@ -154,7 +154,7 @@ PrefabInstance:
       objectReference: {fileID: 6571528859551675747}
     - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: itemName
-      value: Chalk
+      value: ChalkSquashableIngredient Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: itemSprite
