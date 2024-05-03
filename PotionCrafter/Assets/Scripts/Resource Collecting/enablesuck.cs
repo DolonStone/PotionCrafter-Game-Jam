@@ -12,6 +12,7 @@ public class enablesuck : MonoBehaviour
     public float attackdelaytime;
     public float timesincelast;
     public bool attackdelay;
+    public AudioSource hoover;
 
     // Update is called once per frame
     void Update()
@@ -32,6 +33,7 @@ public class enablesuck : MonoBehaviour
 
             hooverenabled = true;
             attackdelay = true;
+            hoover.Play();
             StartCoroutine(Delayhoover());
             StartCoroutine(Delayattack());
         }
@@ -40,6 +42,7 @@ public class enablesuck : MonoBehaviour
         {
             sucker.Stop();
             hooverenabled = false;
+            hoover.Pause();
             timesincelast= 0f;
         }
         

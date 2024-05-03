@@ -1546,7 +1546,7 @@ Transform:
   m_GameObject: {fileID: 81257009}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.81, y: 34.1, z: 0}
+  m_LocalPosition: {x: 1.71, y: 25.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5941,6 +5941,7 @@ MonoBehaviour:
   attackdelaytime: 0.1
   timesincelast: 0
   attackdelay: 0
+  hoover: {fileID: 0}
 --- !u!212 &322071103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24801,6 +24802,7 @@ MonoBehaviour:
   attackdelaytime: 0.1
   timesincelast: 0
   attackdelay: 0
+  hoover: {fileID: 0}
 --- !u!60 &1340319207
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25174,7 +25176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endpoint: {fileID: 81257009}
-  speed: 0.21
+  speed: 3.28
 --- !u!1 &1355256177
 GameObject:
   m_ObjectHideFlags: 0
@@ -29675,6 +29677,7 @@ GameObject:
   - component: {fileID: 1600094790}
   - component: {fileID: 1600094791}
   - component: {fileID: 1600094792}
+  - component: {fileID: 1600094793}
   m_Layer: 0
   m_Name: Hoover
   m_TagString: Destroyer
@@ -29769,6 +29772,7 @@ MonoBehaviour:
   attackdelaytime: 0
   timesincelast: 0
   attackdelay: 0
+  hoover: {fileID: 1600094793}
 --- !u!60 &1600094792
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29831,6 +29835,102 @@ PolygonCollider2D:
       - {x: 0.97999996, y: -1.92}
       - {x: 1.5999999, y: -1.62}
   m_UseDelaunayMesh: 0
+--- !u!82 &1600094793
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600094788}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 823b0d66f8bacca4993ea59427f4c0f0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.088
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1618801237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6697989958665517788, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}

@@ -135,7 +135,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                         droppedItem.transform.GetChild(0).gameObject.SetActive(true);
                     }
                     droppedItem.SetActive(true);
-                    
+                    //IngredientManager.ingredients.Add(droppedItem);
 
                 }
                 else
@@ -143,6 +143,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                     itemObject.transform.position = Gru.transform.position += new Vector3(-8.05f + (SlotID * 2), 4.85f, 10);
                     itemObject.GetComponent<Item>().quantity = 1;
                     itemObject.SetActive(true);
+                    //IngredientManager.ingredients.Add(itemObject);
                 }
                 //GameObject droppedItem = Instantiate(itemPrefab, Gru.transform.position += new Vector3(-8.05f+(prefabIndex*2),4.85f,0), Quaternion.identity);
 
