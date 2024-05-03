@@ -12,6 +12,7 @@ public class SC_Dragable : MonoBehaviour
     public GameObject currentobject;
     public Vector3 mouseFrameMovement = Vector3.zero;
     private Vector3 lastMousePos = Vector3.zero;
+    private float timer = 0f;
     private void Update()
     {
 
@@ -47,9 +48,18 @@ public class SC_Dragable : MonoBehaviour
         
         if (joint)
         {
+
             if (currentobject.CompareTag("Pestle"))
             {
-                currentobject.transform.right = (target.position - new Vector3(0, 6, 0)) - currentobject.transform.position;
+                timer += Time.deltaTime;
+
+
+                if (timer >= 0.05)
+                {
+                    currentobject.transform.right = (target.position - new Vector3(0, 6, 0)) - currentobject.transform.position;
+                    timer = 0f;
+                }
+                    
             }
             joint.target = worldpos;
             

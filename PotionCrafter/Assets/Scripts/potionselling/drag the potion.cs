@@ -13,9 +13,11 @@ public class dragthepotion : MonoBehaviour
     public static float Randnumpotion = 0f;
     [SerializeField] private Vector3 setPosition;
     public GameObject potion;
+    public GameObject textchange;
 
     void Start()
     {
+        textchange = GameObject.FindWithTag("TextChange");
         potion = this.gameObject;
         potion.SetActive(true);
         Randnumpotion = 2;//Random.Range(0, 12);
@@ -41,7 +43,7 @@ public class dragthepotion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) // potion collides with customer //
     {
-        string potionname = textchange.potionwanted;
+        string potionname = textchange.GetComponent<textchange>().potionwanted;
         if (gameObject.name == potionname)
         {
             givecustomer = true;

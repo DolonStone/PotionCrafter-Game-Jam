@@ -74,6 +74,11 @@ public class PotionCombining : MonoBehaviour
         }
         if (currentPotion != -1)
         {
+            //foreach(ingredient tempIngredientScripts in ingredientsScripts)
+            //{
+            //    IngredientManager.ingredients.Remove(tempIngredientScripts.gameObject);
+            //}
+            
             if (currentPotion == 0)
             {
                 GameObject tempPotion = Instantiate(baseSolutionObject);
