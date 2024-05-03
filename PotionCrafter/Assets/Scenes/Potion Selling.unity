@@ -4343,7 +4343,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2581923810482104367, guid: d4b8ee4ee1be6724ab4bfe1fdf4e8f38, type: 3}
       propertyPath: m_Name
-      value: Base Solution
+      value: Base Solution(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 6492886909797485184, guid: d4b8ee4ee1be6724ab4bfe1fdf4e8f38, type: 3}
       propertyPath: m_LocalScale.x

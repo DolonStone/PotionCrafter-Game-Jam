@@ -25176,7 +25176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endpoint: {fileID: 81257009}
-  speed: 3.28
+  speed: 0.27
 --- !u!1 &1355256177
 GameObject:
   m_ObjectHideFlags: 0
