@@ -2511,8 +2511,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d82c78abc216342b561db5adfe4ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damping: 0.77
-  frequency: 33.7
+  damping: 18.27
+  frequency: 9.76
   draglayer:
     serializedVersion: 2
     m_Bits: 1

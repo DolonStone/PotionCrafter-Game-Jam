@@ -15,6 +15,7 @@ TagManager:
   - InventoryBin
   - StackableIngredient
   - PotionSellingTag
+  - TextChange
   layers:
   - Default
   - TransparentFX

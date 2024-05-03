@@ -4422,7 +4422,7 @@ GameObject:
   - component: {fileID: 1020651930}
   m_Layer: 5
   m_Name: Customer Text TMP
-  m_TagString: Untagged
+  m_TagString: TextChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4556,6 +4556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CustomerText: {fileID: 1020651927}
+  potionwanted: 
 --- !u!102 &1020651930
 TextMesh:
   serializedVersion: 3

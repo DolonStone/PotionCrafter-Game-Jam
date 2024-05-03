@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 7110030424042751815}
     - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: itemName
-      value: Vigour
+      value: VigourBerrySquashableIngredient Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2055252142543403518, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
       propertyPath: itemSprite

@@ -2322,6 +2322,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6571528859551675747, guid: 899cf579a5429ac4d8c4ba22b36169f8, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -3349,6 +3357,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 38707711957654259, guid: 4cfcb3ebe4cf9b24c9df9ae6d9f7d20e, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -5154,6 +5170,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6571528859551675747, guid: 899cf579a5429ac4d8c4ba22b36169f8, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -5357,6 +5381,14 @@ PrefabInstance:
     - target: {fileID: 1893382243278231010, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Name
       value: HarvestablePlantScript (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
@@ -7176,6 +7208,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 4957841348766472634, guid: fbefff79842f0e847a9d64a59303e26c, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -7995,6 +8035,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 38707711957654259, guid: 4cfcb3ebe4cf9b24c9df9ae6d9f7d20e, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -9221,6 +9269,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 4957841348766472634, guid: fbefff79842f0e847a9d64a59303e26c, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -10456,6 +10512,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 7110030424042751815, guid: dc4db711eeb669e48875ce2de22adbcb, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -11208,6 +11272,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6571528859551675747, guid: 899cf579a5429ac4d8c4ba22b36169f8, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -14040,6 +14112,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 42151279207625366, guid: 1635be2417edee7479e87aa9bbba2042, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -15306,6 +15386,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -15662,6 +15750,18 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 5968267776690430298, guid: b76c6802cd068ed4ca488662637ffc32, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckedtime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -16490,6 +16590,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 4525950861721704142, guid: d8569eea54a5954438cbdd2a185b0985, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -17193,6 +17301,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 5968267776690430298, guid: b76c6802cd068ed4ca488662637ffc32, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -17802,6 +17918,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 42151279207625366, guid: 1635be2417edee7479e87aa9bbba2042, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -19822,6 +19946,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 5968267776690430298, guid: b76c6802cd068ed4ca488662637ffc32, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -21469,6 +21601,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 38707711957654259, guid: 4cfcb3ebe4cf9b24c9df9ae6d9f7d20e, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -22324,6 +22464,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 5968267776690430298, guid: b76c6802cd068ed4ca488662637ffc32, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -23749,6 +23897,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6571528859551675747, guid: 899cf579a5429ac4d8c4ba22b36169f8, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -24566,6 +24722,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6571528859551675747, guid: 899cf579a5429ac4d8c4ba22b36169f8, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -25176,7 +25340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endpoint: {fileID: 81257009}
-  speed: 0.27
+  speed: 0.75
 --- !u!1 &1355256177
 GameObject:
   m_ObjectHideFlags: 0
@@ -26126,6 +26290,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 42151279207625366, guid: 1635be2417edee7479e87aa9bbba2042, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -26235,6 +26407,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -26937,6 +27117,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6101849812086880521, guid: 4496d5ca105e2ef428d4826fc0807932, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -28096,6 +28284,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 4957841348766472634, guid: fbefff79842f0e847a9d64a59303e26c, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -28629,6 +28825,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 42151279207625366, guid: 1635be2417edee7479e87aa9bbba2042, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -28960,6 +29164,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6571528859551675747, guid: 899cf579a5429ac4d8c4ba22b36169f8, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -29308,6 +29520,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 5968267776690430298, guid: b76c6802cd068ed4ca488662637ffc32, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -29567,6 +29787,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 42151279207625366, guid: 1635be2417edee7479e87aa9bbba2042, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -29767,7 +29995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hooverenabled: 0
   sucker: {fileID: 1638726495}
-  suckfactor: 0.01
+  suckfactor: 0.08
   delay: 1e+11
   attackdelaytime: 0
   timesincelast: 0
@@ -29952,6 +30180,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 4525950861721704142, guid: d8569eea54a5954438cbdd2a185b0985, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -30201,6 +30437,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 4525950861721704142, guid: d8569eea54a5954438cbdd2a185b0985, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -35396,6 +35640,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 4525950861721704142, guid: d8569eea54a5954438cbdd2a185b0985, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -36943,6 +37195,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -37060,6 +37320,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -37375,6 +37643,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 7110030424042751815, guid: dc4db711eeb669e48875ce2de22adbcb, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -37591,6 +37867,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 3799510973657072076, guid: 9005704529df0f544b185c2372ec5067, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -38241,6 +38525,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 3799510973657072076, guid: 9005704529df0f544b185c2372ec5067, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -39048,6 +39340,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6101849812086880521, guid: 4496d5ca105e2ef428d4826fc0807932, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -39938,6 +40238,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -40154,6 +40462,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 6101849812086880521, guid: 4496d5ca105e2ef428d4826fc0807932, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -40777,6 +41093,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HarvestablePlantScript (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -41100,6 +41424,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 4957841348766472634, guid: fbefff79842f0e847a9d64a59303e26c, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -42005,6 +42337,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HarvestablePlantScript (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -42727,6 +43067,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -42844,6 +43192,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 1600400160851111198, guid: 7714ceedc7d78ff41a4939fbcc8bd743, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -42961,6 +43317,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 42151279207625366, guid: 1635be2417edee7479e87aa9bbba2042, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -62583,6 +62947,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 42151279207625366, guid: 1635be2417edee7479e87aa9bbba2042, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -64066,6 +64438,14 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 7110030424042751815, guid: dc4db711eeb669e48875ce2de22adbcb, type: 3}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -64828,6 +65208,14 @@ PrefabInstance:
     - target: {fileID: 1893382243278231010, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Name
       value: HarvestablePlantScript
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckfactor
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550733209556047455, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
+      propertyPath: suckabletime
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4388776887618268026, guid: e46151a5b3a0bd74f820dac30bb03eb4, type: 3}
       propertyPath: m_Size.x

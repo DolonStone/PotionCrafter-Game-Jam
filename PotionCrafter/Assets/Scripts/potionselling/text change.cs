@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using static UnityEditor.PlayerSettings;
+
 
 public class textchange : MonoBehaviour
 {
     public TextMeshProUGUI CustomerText;
-    public static string potionwanted = string.Empty;
+    public string potionwanted = string.Empty;
 
     // Start is called before the first frame update
     void Start()
