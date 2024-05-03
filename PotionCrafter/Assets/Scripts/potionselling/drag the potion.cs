@@ -61,17 +61,16 @@ public class dragthepotion : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) & givecustomer == true) // if player has let go of potion and it collides with the customer //
         {
-            //currentcusnum = Randnumcus;
-            //int currentcustomer = (int)CustomerSpriteChange.customernum;
-            //while (currentcusnum == Randnumcus)
-            //{
-            //        if (currentcustomer == Randnumcus)
-            //        {
-            //            Randnumcus = Random.Range(0, 5);
-            //        }
-            //}
+            currentcusnum = Randnumcus;
+            int currentcustomer = (int)CustomerSpriteChange.customernum;
+            while (currentcusnum == Randnumcus)
+            {
+                    if (currentcustomer == Randnumcus)
+                    {
+                        Randnumcus = Random.Range(0, 5);
+                    }
+            }
 
-            Randnumcus = Random.Range(0, 5);
             Randnumpotion = Random.Range(0, 12);
             givecustomer = false;
             SetPositionFunction();
