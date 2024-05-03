@@ -31,7 +31,11 @@ public class SquashableIngreadient : MonoBehaviour
     void Start()
     {
         pestle = GameObject.FindGameObjectWithTag("Pestle");
-        pestleRb = pestle.GetComponent<Rigidbody2D>();
+        if (GameObject.FindGameObjectWithTag("Pestle") != null)
+        {
+            pestleRb = pestle.GetComponent<Rigidbody2D>();
+        }
+        
         startScale = transform.localScale.x;
         scaleTotalDif = startScale - minsize;
         slider = sliderGameObject.GetComponent<Slider>();

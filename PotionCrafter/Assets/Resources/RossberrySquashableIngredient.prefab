@@ -327,7 +327,7 @@ PrefabInstance:
     - target: {fileID: 8980682090273657219, guid: 0ff2e502d0113db4d912ec57398d916c, type: 3}
       propertyPath: SquashedSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b38046653a7251d458ef959288e85443, type: 3}
+      objectReference: {fileID: 21300000, guid: 1aacbe2fc5c2b8542aaf7edbb50445be, type: 3}
     - target: {fileID: 8980682090273657219, guid: 0ff2e502d0113db4d912ec57398d916c, type: 3}
       propertyPath: sliderIncriment
       value: 0

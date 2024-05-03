@@ -62,9 +62,23 @@ public class SuckableObjectScript : MonoBehaviour
         Instantiate(destroyparticles);
         destroyparticles.transform.position = new Vector2(transform.position.x, transform.position.y);
 
-        Instantiate(drop);
-        drop.transform.position = new Vector2(transform.position.x, transform.position.y);
-        drop.GetComponent<Rigidbody2D>().AddForce(new Vector2(5,5),ForceMode2D.Impulse);
+        var thisdrop = Instantiate(drop);
+        thisdrop.transform.position = new Vector2(transform.position.x, transform.position.y);
+        
+        if (thisdrop.GetComponent<Rigidbody2D>())
+        {
+            thisdrop.GetComponent<Rigidbody2D>().gravityScale = 0;
+            thisdrop.transform.localScale = new Vector3(3f, 3f, 3f);
+        }
+        else
+        {
+            thisdrop.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+            thisdrop.GetComponentInChildren<Rigidbody2D>().gravityScale = 0;
+
+        }
+        
+        //drop.GetComponent<Rigidbody2D>().AddForce(new Vector2(5,5),ForceMode2D.Impulse);
+
         Destroy(gameObject);
     }
 }
