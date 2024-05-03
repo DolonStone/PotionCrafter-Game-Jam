@@ -11,6 +11,7 @@ public class potiontodoimagechange : MonoBehaviour
     public static float RandPotion_order = 0f;
     public int i =0;
     string potionwanted = "";
+    public static bool orderfinished = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +42,7 @@ public class potiontodoimagechange : MonoBehaviour
                     break;
                 case 2:
                     GetComponent<SpriteRenderer>().sprite = sp3;
-                    potionwanted = "P_base";
+                    potionwanted = "Base Solution";
                     break;
                 case 3:
                     GetComponent<SpriteRenderer>().sprite = sp4;
@@ -61,6 +62,7 @@ public class potiontodoimagechange : MonoBehaviour
         if (gameObject.name == potionwanted)
         {
             gameObject.SetActive(false);
+            orderfinished = true;
         }
         else
         {
