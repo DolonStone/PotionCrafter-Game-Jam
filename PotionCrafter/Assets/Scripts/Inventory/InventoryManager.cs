@@ -119,7 +119,17 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(GameObject itemObject)
     {
-        var itemscript = itemObject.GetComponent<Item>();
+        for (int i = 0; i < ItmSlots.Length; i++)
+        {
+            if (ItmSlots[i].GetComponent<ItemSlot>().ItmName == "")
+            {
+                full = false;
+                print("notFull");
+                NextSlot = i;
+                break;
+            }
+        }
+            var itemscript = itemObject.GetComponent<Item>();
         if (((inventory.ContainsKey(itemscript.itemName)) && GameObject.FindWithTag("Player") != null) || (inventory.ContainsKey(itemscript.itemName))&&itemObject.CompareTag("StackableIngredient"))//checks if it exists already in the inventory, and if we are in resource collection so it doesnt mess with quality variables
         {
             //inventory[itemscript.itemName].GetComponent<Item>().quantity += itemscript.quantity;
@@ -127,8 +137,10 @@ public class InventoryManager : MonoBehaviour
             { // Checks each Child for its Code component.
                 if (ItmSlots[i].GetComponent<ItemSlot>().ItmName == itemscript.itemName)
                 {
-                    
-                    ItmSlots[i].GetComponent<ItemSlot>().UpdateSlot(inventory[itemscript.itemName], inventory[itemscript.itemName].GetComponent<Item>().quantity);
+                    print(inventory.ContainsKey(itemscript.itemName));
+
+                    print(inventory[itemscript.itemName.Replace("(Clone)", "")]);
+                    ItmSlots[i].GetComponent<ItemSlot>().UpdateSlot(itemObject, 1);//inventory[itemscript.itemName.Replace("(Clone)","")], inventory[itemscript.itemName].GetComponent<Item>().quantity);
                 }
 
             }

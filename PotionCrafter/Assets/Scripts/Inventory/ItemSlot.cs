@@ -150,12 +150,14 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
             }
             //droppedItem.AddComponent<BoxCollider>(); It should allready have one.
             Debug.Log("Wowwee the quantity is " + Amount);
+
         }
 
         if (Amount == 0)
         {
             SpriteDisplay.GetComponent<Image>().enabled = false;
             InventoryManager.instance.RemoveItem(ItmName, 1);
+            InventoryManager.instance.full = false;
             // GetComponent<InventoryManager>().RemoveItem(ItmName, Amount);
         }
     }
@@ -166,6 +168,8 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         ItmName = "";
         itemScript = null;
         itemObject = null;
+        prefab = null;
+        Gru = null;
         return;
     }
 }
