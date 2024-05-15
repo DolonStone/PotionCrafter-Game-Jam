@@ -19,10 +19,11 @@ public class BoilIngredient : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public AudioSource boilingSound;
     public AudioClip hitsFromThe;
-    
-    
+    private Item itemScript;
+
     private void Start()
     {
+        itemScript = gameObject.GetComponent<Item>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         
         boilingSound = gameObject.GetComponent<AudioSource>();
@@ -66,6 +67,7 @@ public class BoilIngredient : MonoBehaviour
                 if(sliderIncrimented >= 0.5)
                 {
                     spriteRenderer.sprite = heatedSprite;
+                    itemScript.itemSprite = heatedSprite;
                 }
                 if (sliderIncrimented <= 1)
                 {

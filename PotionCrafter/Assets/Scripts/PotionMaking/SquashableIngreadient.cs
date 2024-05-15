@@ -25,7 +25,8 @@ public class SquashableIngreadient : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public int incrimentDividingFactor = 100;
     private AudioSource pestleSound;
-
+    private Item itemScript;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class SquashableIngreadient : MonoBehaviour
         {
             pestleRb = pestle.GetComponent<Rigidbody2D>();
         }
+        itemScript = gameObject.GetComponent<Item>();
         
         startScale = transform.localScale.x;
         scaleTotalDif = startScale - minsize;
@@ -81,6 +83,7 @@ public class SquashableIngreadient : MonoBehaviour
                     if (slider.value >= 0.5)
                     {
                         spriteRenderer.sprite = SquashedSprite;
+                        itemScript.itemSprite = SquashedSprite;
                     }
                     if (slider.value >= 1)
                     {
